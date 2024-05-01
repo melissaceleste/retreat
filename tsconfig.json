@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          // Kompilieren zu ES5
+    "lib": ["dom", "dom.iterable", "esnext"], // Bibliotheken, die im Projekt verwendet werden
+    "allowJs": true,                          // Erlaubt JavaScript-Dateien im Projekt
+    "skipLibCheck": true,                     // Überspringt Typ-Checks für alle .d.ts Dateien
+    "esModuleInterop": true,                  // Ermöglicht Importe von Modulen mit Default-Exporten
+    "allowSyntheticDefaultImports": true,     // Erlaubt Standardimport aus Modulen ohne Standardexport
+    "strict": true,                           // Aktiviert alle strengen Typ-Prüfungs-Optionen
+    "forceConsistentCasingInFileNames": true, // Erzwingt die gleiche Groß-/Kleinschreibung in Dateinamen
+    "module": "esnext",                       // Welche Modul-Syntax verwendet wird (esnext für modernste ECMAScript-Features)
+    "moduleResolution": "node",               // Modul-Auflösungsstrategie
+    "resolveJsonModule": true,                // Ermöglicht das Importieren von JSON-Modulen
+    "isolatedModules": true,                  // Sicherstellen, dass jede Datei als separates Modul transpiliert werden kann
+    "noEmit": true,                           // Verhindert die Ausgabe von Dateien (da Babel möglicherweise für die Transpilation verwendet wird)
+    "jsx": "react-jsx"                        // Unterstützt JSX in .tsx-Dateien
+  },
+  "include": ["src/**/*"]                     // Pfade zu Dateien, die in das Projekt einbezogen werden sollen
+}
