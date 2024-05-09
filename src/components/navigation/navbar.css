@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+    margin: 0 1rem;
+
+    &:hover {
+        cursor: pointer;
+        color: var(--color-knall-orange)
+    }
+}
