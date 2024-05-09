@@ -1,5 +1,55 @@
+:root {
+  --color-entspannt-schwarz:#222222;
+  --color-yellow: #F4EEB6;
+  --color-blue: #4660E9;
+  --color-red: #E94F37;
+  --color-green: #D8D629;
+  --color-purple: #D0ADCD;
+    --color-dark-green: #17968B;
+  --color-beige: #F6EFE7;
+  --color-knall-orange:#FF6230;
+  --color-hell-orange: #FFBE98;
+  --color-knall-gruen:#00B2A9;
+  --color-light-purple: #E9D0F2;
+  --color-alt-rosa: #F8BCCA;
+  --color-lila-blau: #7669E9;
+  --color-knall-lila:#6800F3;
+  --color-lila-dunkelblau: #5C1AF5;
+  --color-normal-lila: #D598FB;
+  --color-peach: #FFC494;
+  --color-rosa: #F6B594;   /* #F9BCCB;*/
+
+  --main-font: "Poetsen One", sans-serif;
+  --jungle: 'jungle', sans-serif;
+  --olives: 'Olives', sans-serif;
+  --montserrat: 'montserrat', sans-serif;
+}
+
+@font-face {
+  font-family: 'jungle';
+  src: url('./fonts/junegull rg.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Olives';
+  src: url('./fonts/Olives.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+
 .App {
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 900px;
 }
 
 .App-logo {
@@ -35,4 +85,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.head {
+  height: 200px;
+  font-family: var(--olives);
+  padding:50px;
+}
+
+.right {
+  height: 400px;
+  padding:50px;
+  font-family: var(--jungle);
+}
+
+.left {
+  height: 400px;
+  padding:50px;
+  font-family: var(--main-font);
 }
