@@ -1,6 +1,6 @@
-import "./kreative-session.css";
+import "./creative-session.css";
 
-export const KreativeSession = () => {
+export const CreativeSession = () => {
   return (
     <div className="kreativeSession">
         <div className="title">"Kreative Sessions"</div>
