@@ -1,22 +1,19 @@
 import './App.css';
-import { FlexHorizontal } from './components/flex-horizontal/flex-horizontal';
-import { Tile } from './components/tile/tile';
-import { WaveUp1 } from './waves/waveUp1';
-import wave from './waves/schmale.png';
-import { Navbar } from './components/navigation/navbar';
+import { FlexHorizontal } from './components/ui/FlexContainer/flex-horizontal';
+import { Tile } from './components/ui/Tile/tile';
+import { Navbar } from './components/layout/Navigation/navbar';
 import { Element } from 'react-scroll';
-import waveDown from './waves/waveDown.svg';
-import { Wave } from './waves/wave';
+import { Wave } from './components/layout/Waves/wave';
 import beach from './pictures/vibe/strand1.jpg';
-import { Program } from './components/program/program';
-import { KreativeSession } from './components/kreative-session/kreative-session';
-import { About } from './components/about/about';
+import { Program } from './components/sections/Program/program';
+import { KreativeSession } from './components/sections/CreativeSession/kreative-session';
+import { About } from './components/sections/About/about';
 import food from './pictures/vibe/food.jpg';
-import { Unterkunft } from './components/unterkunft/unterkunft';
-import { Verpflegung } from './components/verpflegung/verpflegung';
-import { TermineUndKosten } from './components/termineUndKosten/termineUndKosten';
-import { FAQ } from './components/faq/faq';
-import { Anmeldung } from './components/anmeldung/anmeldung';
+import { Unterkunft } from './components/sections/Accommodation/unterkunft';
+import { Verpflegung } from './components/sections/Food/verpflegung';
+import { TermineUndKosten } from './components/sections/Dates/termineUndKosten';
+import { FAQ } from './components/sections/FAQ/faq';
+import { Anmeldung } from './components/sections/Registration/anmeldung';
 
 export const App = () => {
   return (
@@ -25,9 +22,7 @@ export const App = () => {
         <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
           <div className="head">
             <div className="navBar"><Navbar /></div>
-            <div className="headline">
-              ARTSY RETREAT
-            </div>
+            <div className="headline">Zusammenkunst</div>
             <div className="wave">
               <Wave color="var(--color-entspannt-beige)" />
             </div>
@@ -149,5 +144,3 @@ export const App = () => {
   );
 };
 
-
-// scroll  event : einblenden transformation

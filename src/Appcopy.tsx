@@ -1,11 +1,22 @@
 import './App.css';
-import { FlexHorizontal } from './components/flex-horizontal/flex-horizontal';
-import { Tile } from './components/tile/tile';
-import { WaveUp1 } from './waves/waveUp1';
-import wave from './waves/schmale.png';
-import { Navbar } from './components/navigation/navbar';
+import { FlexHorizontal } from './components/ui/FlexContainer/flex-horizontal';
+import { Tile } from './components/ui/Tile/tile';
+import { WaveUp1 } from './components/layout/Waves/waveUp1';
+import wave from './components/layout/Waves/schmale.png';
+import { Navbar } from './components/layout/Navigation/navbar';
 import { Element } from 'react-scroll';
-import  waveDown from './waves/waveDown.svg';
+import waveDown from './components/layout/Waves/waveDown.svg';
+import { Wave } from './components/layout/Waves/wave';
+import beach from './pictures/vibe/strand1.jpg';
+import { Program } from './components/sections/Program/program';
+import { KreativeSession } from './components/sections/CreativeSession/kreative-session';
+import { About } from './components/sections/About/about';
+import food from './pictures/vibe/food.jpg';
+import { Unterkunft } from './components/sections/Accommodation/unterkunft';
+import { Verpflegung } from './components/sections/Food/verpflegung';
+import { TermineUndKosten } from './components/sections/Dates/termineUndKosten';
+import { FAQ } from './components/sections/FAQ/faq';
+import { Anmeldung } from './components/sections/Registration/anmeldung';
 
 export const App = () => {
   return (
