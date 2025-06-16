@@ -1,106 +1,156 @@
 :root {
-  --color-entspannt-schwarz:#222222;
-  --color-yellow: #F4EEB6;
-  --color-blue: #4660E9;
-  --color-red: #E94F37;
-  --color-green: #D8D629;
-  --color-purple: #D0ADCD;
+    --color-entspannt-weiss: #FFFFFF;
+    --color-entspannt-schwarz: #222222;
+    --color-entspannt-beige: #FFF6ED;
+    --color-dunkelgrün: #184027;
+    --color-yellow: #F4EEB6;
+    --color-blue: #4660E9;
+    --color-red: #E94F37;
+    --color-green: #D8D629;
+    --color-purple: #D0ADCD;
     --color-dark-green: #17968B;
-  --color-beige: #F6EFE7;
-  --color-knall-orange:#FF6230;
-  --color-hell-orange: #FFBE98;
-  --color-knall-gruen:#00B2A9;
-  --color-light-purple: #E9D0F2;
-  --color-alt-rosa: #F8BCCA;
-  --color-lila-blau: #7669E9;
-  --color-knall-lila:#6800F3;
-  --color-lila-dunkelblau: #5C1AF5;
-  --color-normal-lila: #D598FB;
-  --color-peach: #FFC494;
-  --color-rosa: #F6B594;   /* #F9BCCB;*/
+    --color-beige: #F6EFE7;
+    --color-knall-orange: #FF6230;
+    --color-hell-orange: #FFBE98;
+    --color-knall-gruen: #00B2A9;
+    --color-light-purple: #E9D0F2;
+    --color-alt-rosa: #F8BCCA;
+    --color-lila-blau: #7669E9;
+    --color-lila-hell: #ABABDE;
+    --color-lila-neongelb: #EFF483;
+    --color-knall-lila: #6800F3;
+    --color-lila-dunkelblau: #5C1AF5;
+    --color-normal-lila: #D598FB;
+    --color-knall-pink: #F597FF;
+    --color-peach: #FFC494;
+    --color-rosa: #F6B594; /* #F9BCCB;*/
 
-  --main-font: "Poetsen One", sans-serif;
-  --jungle: 'jungle', sans-serif;
-  --olives: 'Olives', sans-serif;
-  --montserrat: 'montserrat', sans-serif;
+    --main-font: "Poetsen One", sans-serif;
+    --jungle: 'jungle', sans-serif;
+    --olives: 'Olives', sans-serif;
+    --montserrat: 'montserrat', sans-serif;
+    --teenage-madness: 'teenage-madness', sans-serif;
 }
 
 @font-face {
-  font-family: 'jungle';
-  src: url('./fonts/junegull rg.otf') format('truetype');
+    font-family: 'jungle';
+    src: url('./fonts/junegull rg.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Olives';
-  src: url('./fonts/Olives.ttf') format('truetype');
+    font-family: 'teenage-madness';
+    src: url('./fonts/teenage-madness.regular.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'montserrat';
-  src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: 'Olives';
+    src: url('./fonts/Olives.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'montserrat';
+    src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--color-entspannt-beige);
+}
 
 .App {
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .content {
-  width: 900px;
+    width: 900px;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .head {
-  height: 100px;
-  font-family: var(--olives);
-  padding:50px;
+    height: 205px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-entspannt-beige);
+}
+
+.navBar {
+    font-family: unset;
+    font-weight: 600;
+}
+
+.headline {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    font-family: var(--teenage-madness);
+    font-size: 140px;
+}
+
+.wave {
+    position: fixed;
+    top: 185px;
+    left: 0;
+    width: 100%;
+}
+
+.left, .right {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    overflow: auto;
 }
 
 .right {
-  height: 400px;
-  padding:50px;
-  font-family: var(--jungle);
+    height: auto;
+    padding: 25px;
+    text-align: left;
 }
 
 .left {
-  height: 400px;
-  padding:50px;
-  font-family: var(--main-font);
+    height: auto;
+    padding: 25px;
+    text-align: left;
+}
+
+img {
+    background-color: transparent;
+}
+
+.imageBorder {
+    img {
+        border-radius: 53% 47% 68% 32% / 29% 54% 46% 71%;
+        height: 498px;
+    }
+}
+
+.marginBottom {
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0;
 }

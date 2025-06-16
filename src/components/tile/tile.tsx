@@ -4,11 +4,12 @@ interface Props {
   children: React.ReactNode;
   backgroundColor?:string
   color?:string
+  fontSize?:string
 }
 
-export const Tile = ({children, backgroundColor ='white', color='white'}: Props) => {
+export const Tile = ({children, backgroundColor, color='white', fontSize }: Props) => {
   return (
-    <div className="flex-horizontal" style={{ backgroundColor , color}}>
+    <div className="tile" style={{ backgroundColor , color, fontSize}}>
       {children}
     </div>
   );
