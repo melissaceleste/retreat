@@ -16,9 +16,9 @@ export const About = () => {
               </div>
             </Tile>
             <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
-              <div className="right">
+              <div className="textContainer">
                 <p>
-                  about -
+                  <h1 className="title">about</h1>
                   <br />
                   Stell dir vor:
                   <br />

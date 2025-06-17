@@ -1,6 +1,17 @@
 .about {
+    text-align: left;
+}
+
+.textContainer {
+    padding-left: 25px;
+}
+
+.title {
     font-family: var(--jungle);
 }
 
+.subtext {
+    font-family: var(--montserrat);
+}
 
 

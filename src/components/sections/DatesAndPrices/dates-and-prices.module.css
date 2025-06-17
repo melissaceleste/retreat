@@ -1,0 +1,53 @@
+.datesAndPrices {
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-knall-gruen);
+  text-align: center;
+}
+
+.dateCard {
+  background-color: var(--color-entspannt-beige);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dateTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-knall-gruen);
+  margin-bottom: 1rem;
+}
+
+.dateInfo {
+  color: var(--color-dark-green);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-knall-gruen);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-knall-gruen);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--color-dark-green);
+} 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Tile } from '../../ui/Tile/tile';
 import { FlexHorizontal } from '../../ui/FlexContainer/flex-horizontal';
 import { CreativeSession } from '../CreativeSession/creative-session';
+import './program.css';
 
 export const Program = () => {
   return (
@@ -9,19 +10,20 @@ export const Program = () => {
       <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
         <div className="left">
           <p>
-            Programm
-            <br />
+            <h1 className="title">Programm</h1>
             Das Programm ist anpassbar auf die Wünsche der Teilnehmer:innen.
             <br />
-            TAG 1
             <br />
-            Ankunft am Flughafen (Flug selbst organisieren, gerne helfe ich auch bei der Buchung)
+            <b>TAG 1</b>
+            <ul>
+              <li>Ankunft am Flughafen (Flug selbst organisieren, gerne helfe ich auch bei der Buchung)</li>
+              <li>Transfer vom Flughafen zur Unterkunft</li>
+              <li>Get Together - alle lernen sich beim ersten kalten Getränk oder Fooood (je nach Ankunft)
+                kennen.
+              </li>
+            </ul>
             <br />
-            Transfer vom Flughafen zur Unterkunft
-            <br />
-            Get Together - alle lernen sich beim ersten kalten Getränk oder Fooood (je nach Ankunft) kennen.
-            <br />
-            TAG 2 - 4
+            <b>TAG 2 - 4</b>
             <br />
             09:00 - 10:00 Frühstück
             <br />
@@ -33,7 +35,8 @@ export const Program = () => {
             <br />
             ab 18:00 gemeinsames Kochen, Essen & Ausklingen des Abends beim Sonnenuntergang :-)
             <br />
-            TAG 5
+            <br />
+            <b>TAG 5</b>
             <br />
             Abschiedsfrühstück und transfer zum Flughafen :-)
           </p>

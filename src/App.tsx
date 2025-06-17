@@ -1,13 +1,14 @@
-import './App.css';
+import React from 'react';
 import { Element } from 'react-scroll';
 import { Program } from './components/sections/Program/program';
 import { About } from './components/sections/About/about';
 import { Accommodation } from './components/sections/Accommodation/accommodation';
-import { Verpflegung } from './components/sections/Food/food';
+import { Food } from './components/sections/Food/food';
 import { FAQ } from './components/sections/FAQ/faq';
 import { Registration } from './components/sections/Registration/registration';
 import { Header } from './components/layout/Header/Header';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
+import './App.css';
 
 export const App = () => {
   return (
@@ -21,7 +22,7 @@ export const App = () => {
           <Program />
         </Element>
         <Element name="living" className="marginBottom">
-          <Verpflegung />
+          <Food />
         </Element>
         <Element name="booking" className="marginBottom">
           <Accommodation />
@@ -35,9 +36,6 @@ export const App = () => {
         <Element name="faq" className="marginBottom">
           <Registration />
         </Element>
-        <div className="p-1 fill-pink-400 font-extrabold">
-          Hallo
-        </div>
       </div>
     </div>
   );

@@ -1,47 +1,60 @@
-import { Tile } from '../../ui/Tile/tile';
-import './faq.css';
+import React, { useState } from 'react';
+import styles from './faq.module.css';
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+const faqItems: FAQItem[] = [
+  {
+    question: "Was ist im Preis inbegriffen?",
+    answer: "Der Preis beinhaltet Unterkunft, Vollverpflegung, alle Workshops und Materialien, sowie den Transfer vom/zum Flughafen."
+  },
+  {
+    question: "Muss ich Vorkenntnisse haben?",
+    answer: "Nein, alle Workshops sind für Anfänger:innen geeignet. Wir passen das Programm an die Bedürfnisse der Gruppe an."
+  },
+  {
+    question: "Was muss ich mitbringen?",
+    answer: "Bequeme Kleidung, Badebekleidung, Sonnenschutz und gute Laune. Alle Materialien für die Workshops werden gestellt."
+  },
+  {
+    question: "Wie komme ich zum Retreat?",
+    answer: "Wir organisieren den Transfer vom nächstgelegenen Flughafen. Bitte teile uns deine Ankunftszeit mit."
+  }
+];
 
 export const FAQ = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
-    <div className="faq">
-      <Tile backgroundColor="var(--color-yellow)" color="var(--color-blue)">
-        <div>
-          <div className="title">Häufig gestellte Fragen</div>
-          <div className="faq-item">
-            <div className="question">Was muss ich mitbringen?</div>
-            <div className="answer">
-              • Bequeme Kleidung für die Workshops
-              <br />
-              • Badekleidung für den Pool
-              <br />
-              • Sonnenschutz
-              <br />
-              • Persönliche Hygieneartikel
-              <br />
-              • Gute Laune und Neugierde
+    <div className={styles.faq}>
+      <h2 className={styles.title}>Häufig gestellte Fragen</h2>
+      <div className={styles.faqList}>
+        {faqItems.map((item, index) => (
+          <div key={index} className={styles.faqItem}>
+            <div 
+              className={styles.question}
+              onClick={() => toggleFAQ(index)}
+            >
+              {item.question}
+              <span className={`${styles.icon} ${openIndex === index ? styles.iconOpen : ''}`}>
+                ▼
+              </span>
             </div>
+            {openIndex === index && (
+              <div className={styles.answer}>
+                {item.answer}
+              </div>
+            )}
           </div>
-          <div className="faq-item">
-            <div className="question">Wie komme ich zum Retreat?</div>
-            <div className="answer">
-              Wir organisieren den Transfer vom/zum Flughafen. Bitte teile uns deine Ankunftszeit mit, damit wir dich pünktlich abholen können.
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="question">Gibt es WLAN?</div>
-            <div className="answer">
-              Ja, in allen Unterkünften ist WLAN verfügbar. Wir empfehlen jedoch, die Zeit im Retreat zu nutzen, um digital zu entschleunigen.
-            </div>
-          </div>
-          <div className="faq-item">
-            <div className="question">Kann ich auch alleine teilnehmen?</div>
-            <div className="answer">
-              Absolut! Viele unserer Teilnehmer:innen kommen alleine und finden schnell Anschluss in der Gruppe. Die Workshops und gemeinsamen Aktivitäten bieten viele Möglichkeiten zum Kennenlernen.
-            </div>
-          </div>
-        </div>
-      </Tile>
+        ))}
+      </div>
     </div>
   );
 };
-// Fragen nur anzeigen und wenn man drauf klickt, schieben sich die Antworten auf

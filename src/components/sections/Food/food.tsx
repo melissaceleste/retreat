@@ -1,49 +1,71 @@
 import React from 'react';
-import { FlexHorizontal } from '../../ui/FlexContainer/flex-horizontal';
-import { Tile } from '../../ui/Tile/tile';
-import food from '../../../pictures/vibe/food.jpg';
-import './food.css';
+import styles from './food.module.css';
 
-export const Verpflegung = () => {
+export const Food = () => {
   return (
-    <div className="verpflegung">
-      <img src={food} width="100%" height="auto" alt="Food" />
-      <FlexHorizontal>
-        <Tile backgroundColor="var(--color-green)" color="var(--color-lila-blau)">
-          <div className="left">
-            <p>
-              Verpflegung
-              <br />
-              Die gesamte Verpflegung ist im Preis inklusive. Dabei handelt es sich um Vegetarisches und wenn gewünscht auch veganen Stuff.
-              <br />
-              Frühstück:
-              <br />
-              ein ordentliches Buffet aus süßen und salzigen Leckereien :-)
-              <br />
-              Mittag:
-              <br />
-              leichte Kost (Salate, Bowls, Finger-Food)
-              <br />
-              Abend:
-              <br />
-              hier freue ich mich, wenn wir zusammen kochen oder einen Koch-Plan aus zwei Teilnehmer:innen machen.
-              <br />
-              Zwischendurch:
-              <br />
-              Snacks sind wichtig! :P
-              <br />
-              Getränke:
-              <br />
-              Frischgepresste Säfte, Wein, Bier, Aperoli
+    <div className={styles.food}>
+      <h2 className={styles.title}>Verpflegung</h2>
+      <div className={styles.content}>
+        <div className={styles.mealCard}>
+          <img 
+            src="/images/breakfast.jpg" 
+            alt="Frühstück" 
+            className={styles.image}
+          />
+          <div className={styles.details}>
+            <h3 className={styles.mealTitle}>Frühstück</h3>
+            <p className={styles.description}>
+              Starte den Tag mit einem reichhaltigen Frühstück. Frisches Obst, 
+              lokale Backwaren und verschiedene Aufstriche stehen zur Verfügung.
             </p>
+            <div className={styles.dietary}>
+              <span className={styles.tag}>Vegetarisch</span>
+              <span className={styles.tag}>Vegan</span>
+              <span className={styles.tag}>Glutenfrei</span>
+            </div>
           </div>
-        </Tile>
-        <Tile backgroundColor="var(--color-lila-dunkelblau)" color="var(--color-rosa)">
-          <div className="right">
-            Swipeshow mit Bildern vom Food
+        </div>
+
+        <div className={styles.mealCard}>
+          <img 
+            src="/images/lunch.jpg" 
+            alt="Mittagessen" 
+            className={styles.image}
+          />
+          <div className={styles.details}>
+            <h3 className={styles.mealTitle}>Mittagessen</h3>
+            <p className={styles.description}>
+              Genieße ein leckeres Mittagessen mit frischen, lokalen Zutaten. 
+              Jeden Tag gibt es eine neue Überraschung.
+            </p>
+            <div className={styles.dietary}>
+              <span className={styles.tag}>Vegetarisch</span>
+              <span className={styles.tag}>Vegan</span>
+              <span className={styles.tag}>Laktosefrei</span>
+            </div>
           </div>
-        </Tile>
-      </FlexHorizontal>
+        </div>
+
+        <div className={styles.mealCard}>
+          <img 
+            src="/images/dinner.jpg" 
+            alt="Abendessen" 
+            className={styles.image}
+          />
+          <div className={styles.details}>
+            <h3 className={styles.mealTitle}>Abendessen</h3>
+            <p className={styles.description}>
+              Gemeinsames Kochen und Genießen am Abend. Wir bereiten zusammen 
+              leckere Gerichte zu und lassen den Tag gemütlich ausklingen.
+            </p>
+            <div className={styles.dietary}>
+              <span className={styles.tag}>Vegetarisch</span>
+              <span className={styles.tag}>Vegan</span>
+              <span className={styles.tag}>Glutenfrei</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

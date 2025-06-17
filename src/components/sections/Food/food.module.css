@@ -1,0 +1,64 @@
+.food {
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-knall-gruen);
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mealCard {
+  background-color: var(--color-entspannt-beige);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.details {
+  padding: 1.5rem;
+}
+
+.mealTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-knall-gruen);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--color-dark-green);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.dietary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: var(--color-knall-gruen);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+} 

@@ -1,0 +1,50 @@
+.program {
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-knall-gruen);
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--color-knall-gruen);
+}
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.day {
+  margin-bottom: 1.5rem;
+}
+
+.dayTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-knall-gruen);
+  text-transform: uppercase;
+}
+
+.dayActivities {
+  color: var(--color-knall-gruen);
+  line-height: 1.6;
+}
+
+.dayActivities li {
+  margin-bottom: 0.5rem;
+}
+
+.time {
+  font-weight: 700;
+  color: var(--color-dark-green);
+  margin-right: 0.5rem;
+} 
