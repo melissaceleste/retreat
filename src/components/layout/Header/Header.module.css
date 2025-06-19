@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   background-color: var(--color-entspannt-beige);
-  z-index: 1;
+  z-index: 1000;
 }
 
 .navBar {
@@ -20,11 +20,57 @@
   width: 100%;
   font-family: var(--teenage-madness);
   font-size: 140px;
+  text-align: center;
 }
 
 .wave {
   position: fixed;
   top: 205px;
-  left: 24%;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 950px;
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .headline {
+    font-size: 120px;
+  }
+  
+  .wave {
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head {
+    height: 180px;
+  }
+  
+  .headline {
+    font-size: 70px;
+    top: 60px;
+  }
+  
+  .wave {
+    top: 180px;
+    width: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .head {
+    height: 160px;
+  }
+  
+  .headline {
+    font-size: 50px;
+    top: 70px;
+  }
+  
+  .wave {
+    top: 124px;
+    width: 403px;
+  }
 }

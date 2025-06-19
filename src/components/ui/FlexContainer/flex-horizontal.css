@@ -6,3 +6,19 @@
     width: 100%;
     height: 100%;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flex-horizontal {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex-horizontal {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+}

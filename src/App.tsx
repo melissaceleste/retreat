@@ -23,10 +23,10 @@ export const App: React.FC = () => {
         <Element name="about" className="marginBottom">
           <About />
         </Element>
+        <PicturesOfDiy/>
         <Element name="programm" className="marginBottom">
           <Program />
         </Element>
-          <PicturesOfDiy/>
         <Element name="living" className="marginBottom">
           <Food />
         </Element>

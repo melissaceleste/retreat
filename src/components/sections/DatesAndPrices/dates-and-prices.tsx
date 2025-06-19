@@ -31,10 +31,10 @@ export const DatesAndPrices = () => {
         <div className={styles.dateInfo}>
           <p>23. - 28. September 2024</p>
           <p>6 Tage / 5 Nächte</p>
-        </div>
+          </div>
         <div className={styles.price}>1.299 € pro Person</div>
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
-      </div>
+          </div>
     </div>
   );
 };

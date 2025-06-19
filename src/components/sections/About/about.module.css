@@ -15,9 +15,45 @@
   font-family: var(--jungle);
 }
 
-.imageBorder {
-  img {
-    border-radius: 53% 47% 68% 32% / 29% 54% 46% 71%;
-    height: 498px;
+.imageBorder img {
+  border-radius: 53% 47% 68% 32% / 29% 54% 46% 71%;
+  height: 498px;
+  max-width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+  
+  .textContainer {
+    padding-left: 0;
+    padding: 0 10px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .imageBorder img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .imageBorder img {
+    height: 250px;
+    width: 250px;
+  }
+  
+  .textContainer {
+    padding: 0 5px;
   }
 }

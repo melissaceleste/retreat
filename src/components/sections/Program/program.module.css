@@ -34,4 +34,48 @@
   font-weight: 700;
   color: var(--color-dark-green);
   margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .program {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .dayTitle {
+    font-size: 1.1rem;
+  }
+  
+  .dayActivities {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .program {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .dayTitle {
+    font-size: 1rem;
+  }
+  
+  .dayActivities {
+    font-size: 0.9rem;
+  }
+  
+  .dayActivities li {
+    margin-bottom: 0.3rem;
+  }
 } 

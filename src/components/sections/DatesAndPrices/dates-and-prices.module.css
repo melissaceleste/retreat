@@ -51,4 +51,64 @@
 
 .button:hover {
   background-color: var(--color-dark-green);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .datesAndPrices {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dateCard {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .dateTitle {
+    font-size: 1.3rem;
+  }
+  
+  .price {
+    font-size: 1.1rem;
+  }
+  
+  .button {
+    padding: 0.6rem 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .datesAndPrices {
+    padding: 1rem 0.25rem;
+  }
+  
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .dateCard {
+    padding: 0.75rem;
+  }
+  
+  .dateTitle {
+    font-size: 1.2rem;
+  }
+  
+  .dateInfo {
+    font-size: 0.9rem;
+  }
+  
+  .price {
+    font-size: 1rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 } 
