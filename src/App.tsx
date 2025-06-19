@@ -12,7 +12,7 @@ import { Registration } from './components/sections/Registration/registration';
 import { Header } from './components/layout/Header/Header';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
 import { PicturesOfDiy } from './components/sections/PicturesOfDiy/pictures-of-diy';
-import { PicuresOfVibes } from './components/sections/PicturesOfVibes/picures-of-vibes';
+import { PicturesOfVibes } from './components/sections/PicturesOfVibes/pictures-of-vibes';
 
 export const App: React.FC = () => {
   return (
@@ -38,7 +38,7 @@ export const App: React.FC = () => {
         <Element name="faq" className="marginBottom">
           <FAQ />
         </Element>
-        <PicuresOfVibes />
+        <PicturesOfVibes />
         <Element name="faq" className="marginBottom">
           <Registration />
         </Element>

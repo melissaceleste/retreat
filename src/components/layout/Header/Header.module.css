@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   background-color: var(--color-entspannt-beige);
+  z-index: 1;
 }
 
 .navBar {
@@ -24,6 +25,6 @@
 .wave {
   position: fixed;
   top: 205px;
-  left: 183px;
-  width: 950px;
+  left: 24%;
+  width: 100%;
 }
