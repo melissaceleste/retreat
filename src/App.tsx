@@ -11,6 +11,8 @@ import { FAQ } from './components/sections/FAQ/faq';
 import { Registration } from './components/sections/Registration/registration';
 import { Header } from './components/layout/Header/Header';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
+import { PicturesOfDiy } from './components/sections/PicturesOfDiy/pictures-of-diy';
+import { PicuresOfVibes } from './components/sections/PicturesOfVibes/picures-of-vibes';
 
 export const App: React.FC = () => {
   return (
@@ -23,6 +25,7 @@ export const App: React.FC = () => {
         <Element name="programm" className="marginBottom">
           <Program />
         </Element>
+          <PicturesOfDiy/>
         <Element name="living" className="marginBottom">
           <Food />
         </Element>
@@ -35,6 +38,7 @@ export const App: React.FC = () => {
         <Element name="faq" className="marginBottom">
           <FAQ />
         </Element>
+        <PicuresOfVibes />
         <Element name="faq" className="marginBottom">
           <Registration />
         </Element>
