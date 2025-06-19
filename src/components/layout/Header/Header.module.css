@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--color-entspannt-beige);
+  background-color: var(--background-color);
   z-index: 1000;
 }
 

@@ -20,7 +20,7 @@
 }
 
 .form {
-  background-color: var(--color-entspannt-beige);
+  background-color: var(--background-color);
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,7 @@ input::placeholder, textarea::placeholder {
 }
 
 button:hover {
-  background-color: var(--color-entspannt-beige);
+  background-color: var(--background-color);
   color: var(--main-color-font);
   border: 3px solid var(--main-color-font);
 }
@@ -78,7 +78,7 @@ button {
   border: 3px solid var(--main-color-font);
   border-radius: 5px;
   cursor: pointer;
-  color: var(--color-entspannt-beige);
+  color: var(--background-color);
 }
 
 /* Responsive Design */

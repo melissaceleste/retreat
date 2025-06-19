@@ -6,12 +6,12 @@ import styles from './Header.module.css'
 
 export const Header = () => {
   return (
-    <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
+    <Tile backgroundColor="var(--background-color)" color="var(--main-color-font)">
       <div className={styles.head}>
         <div className={styles.navBar}><Navbar /></div>
         <div className={styles.headline}>Zusammenkunst</div>
         <div className={styles.wave}>
-          <Wave color="var(--color-entspannt-beige)" />
+          <Wave color="var(--background-color)" />
         </div>
       </div>
     </Tile>

@@ -7,7 +7,7 @@ import meImage from '../../../pictures/me/me1 Kopie.JPEG';
 export const AboutMe = () => {
   return (
     <div className={styles.component}>
-      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
+      <Tile backgroundColor="var(--background-color)" color="var(--main-color-font)">
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <img 

@@ -7,7 +7,7 @@ import styles from './program.module.css';
 export const Program = () => {
   return (
     <FlexHorizontal>
-      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
+      <Tile backgroundColor="var(--background-color)" color="var(--main-color-font)">
         <div className={styles.program}>
           <p>
             <h1 className={styles.title}>Programm</h1>

@@ -1,7 +1,7 @@
 :root {
     --color-entspannt-weiss: #FFFFFF;
     --color-entspannt-schwarz: #222222;
-    --color-entspannt-beige: #FFF6ED;
+    --color-beige-enspannt: #FFF6ED;
     --color-dunkelgrün: #184027;
     --color-yellow: #F4EEB6;
     --color-blue: #4660E9;
@@ -27,6 +27,7 @@
 
     --main-color-font: black; /*#F597FF;*/
     --second-color-font: #4660E9; /* #00B2A9;*/
+    --background-color: #FFF6ED;
 
 
     --main-font: "Poetsen One", sans-serif;
@@ -57,7 +58,7 @@
 }
 
 body {
-    background-color: var(--color-entspannt-beige);
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }

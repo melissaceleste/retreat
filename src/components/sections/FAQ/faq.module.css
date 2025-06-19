@@ -20,7 +20,7 @@
 }
 
 .faqItem {
-  background-color: var(--color-entspannt-beige);
+  background-color: var(--background-color);
   border-radius: 8px;
   overflow: hidden;
 }
