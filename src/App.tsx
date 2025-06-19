@@ -14,6 +14,7 @@ import { Header } from './components/layout/Header/Header';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
 import { PicturesOfDiy } from './components/sections/PicturesOfDiy/pictures-of-diy';
 import { PicturesOfVibes } from './components/sections/PicturesOfVibes/pictures-of-vibes';
+import { ColorPicker } from './components/ColorPicker/ColorPicker';
 
 export const App: React.FC = () => {
   return (
@@ -47,6 +48,7 @@ export const App: React.FC = () => {
           <AboutMe />
         </Element>
       </div>
+      <ColorPicker />
     </div>
   );
 };

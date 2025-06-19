@@ -1,0 +1,247 @@
+.visibleButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 9998;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.visibleButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.buttonIcon {
+  font-size: 16px;
+}
+
+.buttonText {
+  font-family: var(--montserrat);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+}
+
+.colorPicker {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.closeButton:hover {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.colorSection {
+  margin-bottom: 20px;
+}
+
+.colorSection label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colorSection span {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.colorInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.colorInput input[type="color"] {
+  width: 50px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: none;
+}
+
+.colorInput input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.colorInput input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+
+.colorInput input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+
+.colorInput input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.resetButton {
+  flex: 1;
+  padding: 12px 20px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.resetButton:hover {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+.actions .closeButton {
+  flex: 1;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.actions .closeButton:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+.shortcut {
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.shortcut small {
+  color: #666;
+  font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .visibleButton {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  
+  .buttonText {
+    display: none;
+  }
+  
+  .buttonIcon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .colorPicker {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .colorInput {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .colorInput input[type="color"] {
+    width: 100%;
+    height: 50px;
+  }
+  
+  .actions {
+    flex-direction: column;
+  }
+  
+  .visibleButton {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+  }
+} 
