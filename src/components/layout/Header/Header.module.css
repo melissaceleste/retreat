@@ -1,0 +1,29 @@
+.head {
+  height: 205px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-entspannt-beige);
+}
+
+.navBar {
+  font-family: unset;
+  font-weight: 600;
+}
+
+.headline {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  font-family: var(--teenage-madness);
+  font-size: 140px;
+}
+
+.wave {
+  position: fixed;
+  top: 205px;
+  left: 183px;
+  width: 950px;
+}

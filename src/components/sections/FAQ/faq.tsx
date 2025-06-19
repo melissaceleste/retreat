@@ -8,20 +8,32 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
   {
+    question: "Was passiert, wenn es nicht genügend Anmeldungen gibt?",
+    answer: "Sollten sich nicht genügend Teilnehmer:innen anmelden oder zu viele stornieren, versuche ich dich rechtzeitig zu informieren und zu erhältst dein Geld zurück. Leider kann ich dies nur bis zu der Stornierungsfrist der Unterkunft ermöglichen, andernfalls kann nur ein Teil der Kosten erstattet werden."
+  },
+  {
     question: "Was ist im Preis inbegriffen?",
-    answer: "Der Preis beinhaltet Unterkunft, Vollverpflegung, alle Workshops und Materialien, sowie den Transfer vom/zum Flughafen."
+    answer: "Der Preis beinhaltet Unterkunft, Vollverpflegung, alle Bastel-Sessions und Materialien, sowie den Transfer vom/zum Flughafen."
   },
   {
     question: "Muss ich Vorkenntnisse haben?",
-    answer: "Nein, alle Workshops sind für Anfänger:innen geeignet. Wir passen das Programm an die Bedürfnisse der Gruppe an."
+    answer: "Nein, alle Bastel-Sessions sind für Anfänger:innen geeignet. Es geht darum gemeinsam was kreativ zu sein und Spaß zu haben."
   },
   {
     question: "Was muss ich mitbringen?",
-    answer: "Bequeme Kleidung, Badebekleidung, Sonnenschutz und gute Laune. Alle Materialien für die Workshops werden gestellt."
+    answer: "Bequeme Kleidung, Badebekleidung, Sonnenschutz und gute Laune. Alle Materialien für die Bastel-Sessions werden gestellt."
   },
   {
     question: "Wie komme ich zum Retreat?",
-    answer: "Wir organisieren den Transfer vom nächstgelegenen Flughafen. Bitte teile uns deine Ankunftszeit mit."
+    answer: "Ich organisieren den Transfer vom nächstgelegenen Flughafen. Bitte teile mir deine Ankunftszeit rechtzeitig mit. Den Flug selbst musst du buchen. Ich unterstütze gerne bei der Planung."
+  },
+  {
+    question: "Gibt es eine Altersbeschränkung?",
+    answer: "Das Retreat richtet sich an Erwachsene. Jugendliche ab 16 Jahren sind willkommen, wenn sie in Begleitung einer Erwachsenen Person sind."
+  },
+  {
+    question: "Wer sind die anderen Teilnehmer:innen?",
+    answer: "Das Retreat richtet sich an alle Menschen, die Lust auf Austausch, neue Freundschaften und kreative Projekte haben. Die Gruppe wird bunt gemischt sein, sodass du viele neue Bekanntschaften schließen kannst. Dabei ist mir wichtig einen harmonischen und safen space zu schaffen, weshalb ich vorab ein kurzes Kennenlerngespräch mit dir führen möchte. Sollte der Wunsch bestehen vorab schon in Kontakt mit den anderen Teilnehmer:innen zu treten, geb mir bescheid. Gern organisiere ich mit allen Interessierten eine Whatsapp/Signal Gruppe."
   }
 ];
 

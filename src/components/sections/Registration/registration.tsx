@@ -8,6 +8,7 @@ export const Registration = () => {
     name: '',
     email: '',
     phone: '',
+    time: '',
     message: ''
   });
 
@@ -28,9 +29,15 @@ export const Registration = () => {
   return (
     <div className={styles.registration} id="anmeldung">
       <h2 className={styles.title}>Anmeldung</h2>
+      <div className={styles.description}>
+        Hört sich gut an? Dann melde dich hier (unverbindlich) einmal bei mir an.
+        . Mir ist es besonders wichtig, dass alle Teilnehmer:innen eine harmonische und spaßige Zeit gemeinsam haben.
+        Immerhin ist es Urlaub für uns alle! :-) Daher möchte ich mit jedem/jeder einmal vorab telefonieren/facetimen
+        oder ein paar Sprachnachrichten hin und her schicken, um zu schauen ob wir die selben Vorstellungen von dieser
+        Reise haben.
+      </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
-          <label htmlFor="name" className={styles.label}>Name</label>
           <input
             type="text"
             id="name"
@@ -39,11 +46,11 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
             required
+            placeholder="Name"
           />
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="email" className={styles.label}>E-Mail</label>
           <input
             type="email"
             id="email"
@@ -52,11 +59,11 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
             required
+            placeholder="E-Mail-Adresse"
           />
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="phone" className={styles.label}>Telefon</label>
           <input
             type="tel"
             id="phone"
@@ -64,11 +71,23 @@ export const Registration = () => {
             value={formData.phone}
             onChange={handleChange}
             className={styles.input}
+            placeholder="Telefonnummer"
           />
         </div>
 
         <div className={styles.formGroup}>
-          <label htmlFor="message" className={styles.label}>Nachricht</label>
+          <input
+            type="text"
+            id="time"
+            name="time"
+            value={formData.time}
+            onChange={handleChange}
+            className={styles.input}
+            placeholder="Gewünschter Zeitraum"
+          />
+        </div>
+
+        <div className={styles.formGroup}>
           <textarea
             id="message"
             name="message"
@@ -76,11 +95,12 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
             rows={4}
+            placeholder="(optional) Anmerkungen: Erreichbarkeit, vorab Fragen, oder oder oder..."
           />
         </div>
 
         <button type="submit" className={styles.button}>
-          Anmelden
+          Let's go!
         </button>
       </form>
     </div>

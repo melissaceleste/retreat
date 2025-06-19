@@ -1,13 +1,14 @@
 .kreativeSession {
   text-align: left;
-  padding: 2rem 1rem;
+  font-weight: 500;
+  padding: 25px;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--color-knall-gruen);
+  color: var(--color-knall-pink);
   text-transform: uppercase;
 }
 
@@ -18,5 +19,4 @@
 
 .list {
   margin-bottom: 0.5rem;
-  color: var(--color-knall-gruen);
-} 
+}

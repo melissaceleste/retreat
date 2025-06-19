@@ -1,5 +1,7 @@
 .program {
-  padding: 2rem 1rem;
+  text-align: left;
+  font-weight: 500;
+  padding-right: 25px;
 }
 
 .title {
@@ -7,23 +9,8 @@
   font-weight: 700;
   margin-bottom: 1rem;
   color: var(--color-knall-gruen);
+  font-family: var(--jungle);
   text-transform: uppercase;
-}
-
-.description {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: var(--color-knall-gruen);
-}
-
-.schedule {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.day {
-  margin-bottom: 1.5rem;
 }
 
 .dayTitle {

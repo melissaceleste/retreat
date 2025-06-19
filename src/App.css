@@ -87,36 +87,6 @@ body {
     }
 }
 
-.head {
-    height: 205px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: var(--color-entspannt-beige);
-}
-
-.navBar {
-    font-family: unset;
-    font-weight: 600;
-}
-
-.headline {
-    position: fixed;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    font-family: var(--teenage-madness);
-    font-size: 140px;
-}
-
-.wave {
-    position: fixed;
-    top: 185px;
-    left: 0;
-    width: 100%;
-}
-
 .left, .right {
     flex-grow: 1;
     flex-shrink: 1;
@@ -140,15 +110,8 @@ img {
     background-color: transparent;
 }
 
-.imageBorder {
-    img {
-        border-radius: 53% 47% 68% 32% / 29% 54% 46% 71%;
-        height: 498px;
-    }
-}
-
 .marginBottom {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 p {

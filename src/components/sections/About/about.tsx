@@ -2,24 +2,23 @@ import React from 'react';
 import { Tile } from '../../ui/Tile/tile';
 import { FlexHorizontal } from '../../ui/FlexContainer/flex-horizontal';
 import beach from '../../../pictures/vibe/strand1.jpg';
-import './about.css';
+import styles from './about.module.css';
 
 export const About = () => {
   return (
-    <div className="about">
+    <div className={styles.about}>
       <FlexHorizontal marginTop="350px">
         <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)" fontSize="22px">
           <FlexHorizontal>
             <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-peach)">
-              <div className="imageBorder">
+              <div className={styles.imageBorder}>
                 <img src={beach} width="450px" height="auto" />
               </div>
             </Tile>
             <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
-              <div className="textContainer">
+              <div className={styles.textContainer}>
                 <p>
-                  <h1 className="title">about</h1>
-                  <br />
+                  <h1 className={styles.title}>about</h1>
                   Stell dir vor:
                   <br />
                   Eine Woche an einem sonnigen Ort, umgeben von lieben Menschen, die Lust auf Malen, Basteln & Tonen haben.

@@ -1,28 +1,23 @@
 .about {
-  padding: 2rem 1rem;
-  font-family: 'Playfair Display', serif;
+  text-align: left;
+}
+
+.textContainer {
+  padding-left: 10px;
+  font-family: var(--montserrat);
 }
 
 .title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--color-knall-gruen);
-  text-align: center;
+  color: var(--color-knall-pink);
+  font-family: var(--jungle);
 }
 
-.description {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: var(--color-knall-gruen);
-  margin-bottom: 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+.imageBorder {
+  img {
+    border-radius: 53% 47% 68% 32% / 29% 54% 46% 71%;
+    height: 498px;
+  }
 }
-
-.highlight {
-  font-weight: 700;
-  color: var(--color-dark-green);
-} 

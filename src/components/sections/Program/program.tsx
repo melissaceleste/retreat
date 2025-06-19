@@ -2,19 +2,19 @@ import React from 'react';
 import { Tile } from '../../ui/Tile/tile';
 import { FlexHorizontal } from '../../ui/FlexContainer/flex-horizontal';
 import { CreativeSession } from '../CreativeSession/creative-session';
-import './program.css';
+import styles from './program.module.css';
 
 export const Program = () => {
   return (
     <FlexHorizontal>
       <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
-        <div className="left">
+        <div className={styles.program}>
           <p>
-            <h1 className="title">Programm</h1>
+            <h1 className={styles.title}>Programm</h1>
             Das Programm ist anpassbar auf die Wünsche der Teilnehmer:innen.
             <br />
             <br />
-            <b>TAG 1</b>
+            <b className={styles.dayTitle}>TAG 1</b>
             <ul>
               <li>Ankunft am Flughafen (Flug selbst organisieren, gerne helfe ich auch bei der Buchung)</li>
               <li>Transfer vom Flughafen zur Unterkunft</li>
@@ -23,7 +23,7 @@ export const Program = () => {
               </li>
             </ul>
             <br />
-            <b>TAG 2 - 4</b>
+            <b className={styles.dayTitle}>TAG 2 - 4</b>
             <br />
             09:00 - 10:00 Frühstück
             <br />
@@ -36,16 +36,14 @@ export const Program = () => {
             ab 18:00 gemeinsames Kochen, Essen & Ausklingen des Abends beim Sonnenuntergang :-)
             <br />
             <br />
-            <b>TAG 5</b>
+            <b className={styles.dayTitle}>TAG 5</b>
             <br />
             Abschiedsfrühstück und transfer zum Flughafen :-)
           </p>
         </div>
       </Tile>
       <Tile backgroundColor="var(--color-dark-green)" color="var(--color-purple)">
-        <div className="right">
           <CreativeSession />
-        </div>
       </Tile>
     </FlexHorizontal>
   );
