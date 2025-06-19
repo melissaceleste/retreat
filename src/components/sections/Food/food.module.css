@@ -7,7 +7,7 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   font-family: var(--jungle);
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   text-align: center;
 }
 
@@ -39,12 +39,12 @@
 .mealTitle {
   font-size: 20px;
   font-weight: 700;
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
   text-transform: uppercase;
 }
 
 .description {
-  color: var(--color-dark-green);
+  color: var(--second-color-font);
   margin-bottom: 1rem;
   line-height: 1.6;
 }
@@ -57,7 +57,7 @@
 }
 
 .tag {
-  background-color: var(--color-knall-gruen);
+  background-color: var(--second-color-font);
   color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;

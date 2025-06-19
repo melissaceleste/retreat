@@ -7,7 +7,7 @@ import meImage from '../../../pictures/me/me1 Kopie.JPEG';
 export const AboutMe = () => {
   return (
     <div className={styles.component}>
-      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
+      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
         <div className={styles.content}>
           <div className={styles.imageContainer}>
             <img 
@@ -18,7 +18,7 @@ export const AboutMe = () => {
           </div>
           
           <div className={styles.textContainer}>
-            <h2 className={styles.title}>About Me</h2>
+            <h2 className={styles.title}>Über mich</h2>
             <p className={styles.description}>
               Hallo! Ich bin Melissa und die Gründerin von Zusammenkunst. 
               Ich bin Hauptberuflich Softwareentwicklerin, engagiere mich ehrenamtlich für Feminismus und sammel einfach viel zu viele Hobbys. Ich liebe es allesmögliche auszuprobieren und bin Stammgast in Bastelgeschäften. Ich bin single und habe keine Lust allein zu reisen, daher habe ich beschlossen, meine Hobbys mit anderen zu teilen und gemeinsam zu verreisen.

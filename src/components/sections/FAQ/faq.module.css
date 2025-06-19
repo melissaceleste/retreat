@@ -8,7 +8,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 2rem;
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
   font-family: var(--jungle);
   text-align: center;
 }
@@ -32,13 +32,13 @@
   justify-content: space-between;
   align-items: center;
   font-weight: 400;
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   font-family: var(--jungle);
 }
 
 .answer {
   padding: 1rem;
-  color: var(--color-dark-green);
+  color: var(--second-color-font);
   line-height: 1.6;
 }
 

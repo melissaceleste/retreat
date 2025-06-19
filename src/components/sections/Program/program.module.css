@@ -8,7 +8,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
   font-family: var(--jungle);
   text-transform: uppercase;
 }
@@ -17,12 +17,12 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
   text-transform: uppercase;
 }
 
 .dayActivities {
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
   line-height: 1.6;
 }
 
@@ -32,7 +32,7 @@
 
 .time {
   font-weight: 700;
-  color: var(--color-dark-green);
+  color: var(--second-color-font);
   margin-right: 0.5rem;
 }
 

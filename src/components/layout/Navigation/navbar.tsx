@@ -36,7 +36,7 @@ export const Navbar = () => {
           <Link to="faq" smooth={true} duration={500} offset={-300}>FAQ</Link>
         </li>
         <li className={styles.li}>
-          <Link to="aboutMe" smooth={true} duration={500} offset={-220}>About Me</Link>
+          <Link to="aboutMe" smooth={true} duration={500} offset={-320}>Über mich</Link>
         </li>
       </ul>
 
@@ -77,7 +77,7 @@ export const Navbar = () => {
               <Link to="faq" smooth={true} duration={500} offset={-200} onClick={closeMenu}>FAQ</Link>
             </li>
             <li className={styles.sideMenuItem}>
-              <Link to="aboutMe" smooth={true} duration={500} offset={-220} onClick={closeMenu}>About Me</Link>
+              <Link to="aboutMe" smooth={true} duration={500} offset={-220} onClick={closeMenu}>Über mich</Link>
             </li>
           </ul>
         </div>

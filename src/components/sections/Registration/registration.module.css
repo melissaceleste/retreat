@@ -8,14 +8,14 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  color: var(--color-knall-gruen);
+  color: var(--second-color-font);
     font-family: var(--jungle);
   text-align: center;
 }
 
 .description {
   font-size: 1.125rem;
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   text-align: center;
 }
 
@@ -36,23 +36,23 @@ input, textarea {
   width: 100%;
   padding: 0.75rem;
   display: inline-block;
-  border: 3px solid var(--color-knall-pink);
+  border: 3px solid var(--main-color-font);
   border-radius: 5px;
   box-sizing: border-box;
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   -webkit-appearance: none;
   outline: none;
 }
 
 input::placeholder, textarea::placeholder {
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   font-size: 16px;
 }
 
 
 .input:focus {
   outline: none;
-  border-color: var(--color-dark-green);
+  border-color: var(--second-color-font);
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -64,18 +64,18 @@ input::placeholder, textarea::placeholder {
 
 button:hover {
   background-color: var(--color-entspannt-beige);
-  color: var(--color-knall-pink);
-  border: 3px solid var(--color-knall-pink);
+  color: var(--main-color-font);
+  border: 3px solid var(--main-color-font);
 }
 
 button {
   font-family: var(--jungle);
   font-size: 18px;
   width: 100%;
-  background-color: var(--color-knall-pink);
+  background-color: var(--main-color-font);
   padding: 8px 20px;
   margin: 8px 0;
-  border: 3px solid var(--color-knall-pink);
+  border: 3px solid var(--main-color-font);
   border-radius: 5px;
   cursor: pointer;
   color: var(--color-entspannt-beige);

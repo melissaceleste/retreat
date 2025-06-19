@@ -6,7 +6,7 @@ import styles from './Header.module.css'
 
 export const Header = () => {
   return (
-    <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
+    <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
       <div className={styles.head}>
         <div className={styles.navBar}><Navbar /></div>
         <div className={styles.headline}>Zusammenkunst</div>

@@ -41,7 +41,7 @@
   font-family: var(--jungle);
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -50,7 +50,7 @@
   font-family: var(--montserrat);
   font-size: 1.1rem;
   line-height: 1.7;
-  color: var(--color-knall-pink);
+  color: var(--main-color-font);
   margin-bottom: 1.2rem;
   text-align: justify;
 }

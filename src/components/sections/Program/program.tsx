@@ -7,7 +7,7 @@ import styles from './program.module.css';
 export const Program = () => {
   return (
     <FlexHorizontal>
-      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
+      <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
         <div className={styles.program}>
           <p>
             <h1 className={styles.title}>Programm</h1>
@@ -42,7 +42,7 @@ export const Program = () => {
           </p>
         </div>
       </Tile>
-      <Tile backgroundColor="var(--color-dark-green)" color="var(--color-purple)">
+      <Tile backgroundColor="var(--second-color-font)" color="var(--color-purple)">
           <CreativeSession />
       </Tile>
     </FlexHorizontal>

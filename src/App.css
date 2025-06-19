@@ -21,9 +21,13 @@
     --color-knall-lila: #6800F3;
     --color-lila-dunkelblau: #5C1AF5;
     --color-normal-lila: #D598FB;
-    --color-knall-pink: #F597FF;
     --color-peach: #FFC494;
     --color-rosa: #F6B594; /* #F9BCCB;*/
+    --color-knall-pink: #F597FF;
+
+    --main-color-font: black; /*#F597FF;*/
+    --second-color-font: #4660E9; /* #00B2A9;*/
+
 
     --main-font: "Poetsen One", sans-serif;
     --jungle: 'jungle', sans-serif;

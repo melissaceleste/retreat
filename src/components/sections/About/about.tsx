@@ -8,14 +8,14 @@ export const About = () => {
   return (
     <div className={styles.about}>
       <FlexHorizontal>
-        <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)" fontSize="22px">
+        <Tile backgroundColor="var(--color-entspannt-beige)" color="var(---main-color-font)" fontSize="22px">
           <FlexHorizontal>
             <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-peach)">
               <div className={styles.imageBorder}>
                 <img src={beach} width="450px" height="auto" />
               </div>
             </Tile>
-            <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)">
+            <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--main-color-font)">
               <div className={styles.textContainer}>
                 <p>
                   <h1 className={styles.title}>about</h1>

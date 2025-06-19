@@ -21,7 +21,7 @@
 .li:hover {
     cursor: pointer;
     padding: 5px;
-    border: 2px solid var(--color-knall-pink);
+    border: 2px solid var(--main-color-font);
 }
 
 /* Burger Menu Button */
@@ -44,7 +44,7 @@
 .burgerLine {
     width: 100%;
     height: 3px;
-    background-color: var(--color-knall-pink);
+    background-color: var(--main-color-font);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -93,7 +93,7 @@
     background: none;
     border: none;
     font-size: 24px;
-    color: var(--color-knall-pink);
+    color: var(--main-color-font);
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -117,14 +117,14 @@
     display: block;
     padding: 15px 0;
     font-size: 1.2rem;
-    color: var(--color-knall-pink);
+    color: var(--main-color-font);
     text-decoration: none;
     border-bottom: 1px solid rgba(245, 151, 255, 0.2);
     transition: all 0.3s ease;
 }
 
 .sideMenuItem a:hover {
-    color: var(--color-dark-green);
+    color: var(--second-color-font);
     padding-left: 10px;
 }
 
