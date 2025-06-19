@@ -18,19 +18,25 @@ export const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className={styles.ulNavigation}>
         <li className={styles.li}>
-          <Link to="about" smooth={true} duration={500}>About</Link>
+          <Link to="about" smooth={true} duration={500} offset={-300}>About</Link>
         </li>
         <li className={styles.li}>
-          <Link to="programm" smooth={true} duration={500}>Programm</Link>
+          <Link to="programm" smooth={true} duration={500} offset={-380}>Programm</Link>
         </li>
         <li className={styles.li}>
-          <Link to="living" smooth={true} duration={500}>Living</Link>
+          <Link to="food" smooth={true} duration={500} offset={-300}>Verpflegung</Link>
         </li>
         <li className={styles.li}>
-          <Link to="booking" smooth={true} duration={500}>Booking</Link>
+          <Link to="accommodation" smooth={true} duration={500} offset={-300}>Unterkunft</Link>
         </li>
         <li className={styles.li}>
-          <Link to="fqa" smooth={true} duration={500}>FQA</Link>
+          <Link to="datesAndPrices" smooth={true} duration={500} offset={-300}>Termine und Preise</Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="faq" smooth={true} duration={500} offset={-300}>FAQ</Link>
+        </li>
+        <li className={styles.li}>
+          <Link to="aboutMe" smooth={true} duration={500} offset={-220}>About Me</Link>
         </li>
       </ul>
 
@@ -53,19 +59,25 @@ export const Navbar = () => {
           </button>
           <ul className={styles.sideMenuList}>
             <li className={styles.sideMenuItem}>
-              <Link to="about" smooth={true} duration={500} onClick={closeMenu}>About</Link>
+              <Link to="about" smooth={true} duration={500} offset={-300} onClick={closeMenu}>About</Link>
             </li>
             <li className={styles.sideMenuItem}>
-              <Link to="programm" smooth={true} duration={500} onClick={closeMenu}>Programm</Link>
+              <Link to="programm" smooth={true} duration={500} offset={-320} onClick={closeMenu}>Programm</Link>
             </li>
             <li className={styles.sideMenuItem}>
-              <Link to="living" smooth={true} duration={500} onClick={closeMenu}>Living</Link>
+              <Link to="food" smooth={true} duration={500} offset={-180} onClick={closeMenu}>Verpflegung</Link>
             </li>
             <li className={styles.sideMenuItem}>
-              <Link to="booking" smooth={true} duration={500} onClick={closeMenu}>Booking</Link>
+              <Link to="accommodation" smooth={true} duration={500} offset={-210} onClick={closeMenu}>Unterkunft</Link>
             </li>
             <li className={styles.sideMenuItem}>
-              <Link to="fqa" smooth={true} duration={500} onClick={closeMenu}>FQA</Link>
+              <Link to="datesAndPrices" smooth={true} duration={500} offset={-220} onClick={closeMenu}>Datum und Preise</Link>
+            </li>
+            <li className={styles.sideMenuItem}>
+              <Link to="faq" smooth={true} duration={500} offset={-200} onClick={closeMenu}>FAQ</Link>
+            </li>
+            <li className={styles.sideMenuItem}>
+              <Link to="aboutMe" smooth={true} duration={500} offset={-220} onClick={closeMenu}>About Me</Link>
             </li>
           </ul>
         </div>

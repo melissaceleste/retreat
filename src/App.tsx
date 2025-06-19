@@ -20,30 +20,30 @@ export const App: React.FC = () => {
     <div className="App">
       <div className="content">
         <Header />
-        <Element name="about">
+        <Element name="about" className="marginBottom">
           <About />
         </Element>
         <PicturesOfDiy/>
         <Element name="programm" className="marginBottom">
           <Program />
         </Element>
-        <Element name="living" className="marginBottom">
+        <Element name="food" className="marginBottom">
           <Food />
         </Element>
-        <Element name="booking" className="marginBottom">
+        <Element name="accommodation" className="marginBottom">
           <Accommodation />
         </Element>
-        <Element name="booking" className="marginBottom">
+        <Element name="datesAndPrices" className="marginBottom">
           <DatesAndPrices />
         </Element>
         <PicturesOfVibes />
-        <Element name="faq" className="marginBottom">
+        <Element name="registration" className="marginBottom">
           <Registration />
         </Element>
         <Element name="faq" className="marginBottom">
           <FAQ />
         </Element>
-        <Element name="about-me" className="marginBottom">
+        <Element name="aboutMe" className="marginBottom">
           <AboutMe />
         </Element>
       </div>
