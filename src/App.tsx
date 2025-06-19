@@ -20,7 +20,7 @@ export const App: React.FC = () => {
     <div className="App">
       <div className="content">
         <Header />
-        <Element name="about" className="marginBottom">
+        <Element name="about">
           <About />
         </Element>
         <PicturesOfDiy/>

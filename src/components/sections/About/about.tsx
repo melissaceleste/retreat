@@ -7,7 +7,7 @@ import styles from './about.module.css';
 export const About = () => {
   return (
     <div className={styles.about}>
-      <FlexHorizontal marginTop="350px">
+      <FlexHorizontal>
         <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-knall-pink)" fontSize="22px">
           <FlexHorizontal>
             <Tile backgroundColor="var(--color-entspannt-beige)" color="var(--color-peach)">
@@ -22,7 +22,8 @@ export const About = () => {
                   Stell dir vor:
                   <br />
                   Verreisen, mit fremden Menschen, die alle ein
-                  Hobby teilen - kreativ zu sein. Neue Menschen kennenlernen, gemeinsam basteln, gemeinsam kochen und das irgendwo auf einer warmen Insel.
+                  Hobby teilen - kreativ zu sein.
+                  <br />Neue Menschen kennenlernen, gemeinsam basteln, gemeinsam kochen und das irgendwo auf einer warmen Insel.
                   <br />
                   Du musst kein*e wild*e Künstler*in sein, nur Spaß daran haben, neue Menschen kennen- und voneinander zu lernen.
                   <br />

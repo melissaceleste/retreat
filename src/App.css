@@ -71,11 +71,10 @@ body {
     max-width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-    margin-top: 60px;
+    margin-top: 340px;
 }
 
 .App-logo {
-    height: 40vmin;
     pointer-events: none;
 }
 
@@ -132,35 +131,19 @@ p {
     .content {
         width: 100%;
         padding: 0 15px;
+        margin-top: 175px
     }
 }
 
 @media (max-width: 768px) {
-    .content {
-        padding: 0 10px;
-        margin-top: 180px;
-    }
-    
-    .marginBottom {
-        margin-bottom: 20px;
-    }
-    
     .right, .left {
         padding: 15px;
     }
 }
 
 @media (max-width: 480px) {
-    .content {
-        padding: 0 5px;
-        margin-top: 160px;
-    }
-    
-    .marginBottom {
-        margin-bottom: 15px;
-    }
-    
     .right, .left {
         padding: 10px;
+        margin-top: 175px
     }
 }
