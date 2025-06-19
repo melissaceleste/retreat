@@ -5,6 +5,7 @@ import './App.css';
 // Komponenten-Imports
 import { Program } from './components/sections/Program/program';
 import { About } from './components/sections/About/about';
+import { AboutMe } from './components/sections/AboutMe/about-me';
 import { Accommodation } from './components/sections/Accommodation/accommodation';
 import { Food } from './components/sections/Food/food';
 import { FAQ } from './components/sections/FAQ/faq';
@@ -35,12 +36,15 @@ export const App: React.FC = () => {
         <Element name="booking" className="marginBottom">
           <DatesAndPrices />
         </Element>
-        <Element name="faq" className="marginBottom">
-          <FAQ />
-        </Element>
         <PicturesOfVibes />
         <Element name="faq" className="marginBottom">
           <Registration />
+        </Element>
+        <Element name="faq" className="marginBottom">
+          <FAQ />
+        </Element>
+        <Element name="about-me" className="marginBottom">
+          <AboutMe />
         </Element>
       </div>
     </div>

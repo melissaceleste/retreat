@@ -31,8 +31,6 @@ const images = [
 export const PicturesOfVibes = () => {
   return (
     <div className={styles.component}>
-      <h2 className={styles.title}>Retreat Vibes</h2>
-      
       {/* Masonry Grid */}
       <div className={styles.masonryGrid}>
         {images.map((image, index) => (

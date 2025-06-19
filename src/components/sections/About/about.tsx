@@ -21,7 +21,8 @@ export const About = () => {
                   <h1 className={styles.title}>about</h1>
                   Stell dir vor:
                   <br />
-                  Eine Woche an einem sonnigen Ort, umgeben von lieben Menschen, die Lust auf Malen, Basteln & Tonen haben.
+                  Verreisen, mit fremden Menschen, die alle ein
+                  Hobby teilen - kreativ zu sein. Neue Menschen kennenlernen, gemeinsam basteln, gemeinsam kochen und das irgendwo auf einer warmen Insel.
                   <br />
                   Du musst kein*e wild*e Künstler*in sein, nur Spaß daran haben, neue Menschen kennen- und voneinander zu lernen.
                   <br />
