@@ -1,0 +1,47 @@
+.slideshowWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.slideshowContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.image {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+}
+
+.arrowLeft, .arrowRight {
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.arrowLeft:hover, .arrowRight:hover {
+  color: var(--main-color-font);
+  background: transparent;
+  border: none;
+}
+
+.arrowLeft {
+  right: 160px;
+}
+
+.arrowRight {
+  left: 160px;
+}

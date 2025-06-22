@@ -11,6 +11,7 @@ import { Food } from './components/sections/Food/food';
 import { FAQ } from './components/sections/FAQ/faq';
 import { Registration } from './components/sections/Registration/registration';
 import { Header } from './components/layout/Header/Header';
+import { Footer } from './components/layout/Footer/Footer';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
 import { PicturesOfDiy } from './components/sections/PicturesOfDiy/pictures-of-diy';
 import { PicturesOfVibes } from './components/sections/PicturesOfVibes/pictures-of-vibes';
@@ -47,6 +48,7 @@ export const App: React.FC = () => {
         <Element name="aboutMe" className="marginBottom">
           <AboutMe />
         </Element>
+        <Footer />
       </div>
       <ColorPicker />
     </div>
