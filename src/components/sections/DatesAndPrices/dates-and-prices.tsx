@@ -43,17 +43,6 @@ export const DatesAndPrices = () => {
         <div className={styles.price}>880 € pro Person</div>  {/*3.655,84 (8) / 6 = 522,2628571429*/}
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
       </div>
-
-      <div className={styles.dateCard}>
-        <ImageSlideshow images={[]} />
-        <h3 className={styles.dateTitle}>Herbst 2024</h3>
-        <div className={styles.dateInfo}>
-          <p>23. - 28. September 2024</p>
-          <p>6 Tage / 5 Nächte</p>
-          </div>
-        <div className={styles.price}>1.299 € pro Person</div>
-        <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
-          </div>
     </div>
   );
 };
