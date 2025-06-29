@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { FlexHorizontal } from '../../ui/FlexContainer/flex-horizontal';
-import { Tile } from '../../ui/Tile/tile';
 import styles from './registration.module.css';
+import emailjs from 'emailjs-com';
 
 export const Registration = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [emailWasSent, setEmailWasSent] = useState<null | boolean>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,11 +15,34 @@ export const Registration = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Hier kommt später die Logik für das Absenden des Formulars
-    console.log('Form submitted:', formData);
+    setIsLoading(true);
+    setEmailWasSent(null);
+
+    emailjs.send(
+      'service_epsz3rv',      // userId
+      'template_f1xphrl',     // template ID
+      formData,               // Das Objekt mit den Formulardaten
+      'kFNzjMWkTCmvNtbTz'          //public Key
+    )
+    .then(() => {
+        setIsLoading(false);
+        setEmailWasSent(true);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          time: '',
+          message: ''
+        });
+    }, () => {
+        setIsLoading(false);
+        setEmailWasSent(false);
+    });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -76,15 +100,19 @@ export const Registration = () => {
         </div>
 
         <div className={styles.formGroup}>
-          <input
-            type="text"
+          <select
             id="time"
             name="time"
             value={formData.time}
             onChange={handleChange}
             className={styles.input}
-            placeholder="Gewünschter Zeitraum"
-          />
+            required
+          >
+            <option value="">Gewünschtes Retreat auswählen</option>
+            <option value="Bali Retreat Mai 2024">Bali Retreat Mai 2026</option>
+            <option value="Mallorca Retreat Juni 2024">Mallorca Retreat Juni 2026</option>
+            <option value="Portugal Retreat September 2024">Portugal Retreat September 2026</option>
+          </select>
         </div>
 
         <div className={styles.formGroup}>
@@ -99,13 +127,22 @@ export const Registration = () => {
           />
         </div>
 
-        <button type="submit" className={styles.button}>
+        <button type="submit" className={styles.button} disabled={isLoading}>
           Let's go!
         </button>
+        {isLoading && <div className={styles.registrationMessage}>E-Mail wird gesendet. Kleinen Moment<span className={styles.dots}>...</span></div>}
+        {emailWasSent === true && <div className={styles.registrationMessage}>Erfolgreich angemeldet!🎉 <br />
+          Wie schön! Ich freu mich. <br /> Du erhälst in Kürze eine Nachricht von mir. (Kann einen Tag dauern)</div>}
+        {emailWasSent === false && (
+          <div className={styles.error}>
+            Hmm. Hier ist etwas schief gelaufen. Bitte melde dich direkt per E-Mail an mich: <a href="mailto:celeste.gries@proton.me
+">celeste.gries@proton.me
+          </a>
+          </div>
+        )}
       </form>
     </div>
   );
 };
-// on submit soll mir eine Email mit den Daten geschickt werden
-// hierfür nochmal ein neues Email-Postfach anlegen
+
 // Telefonat und wenn das passiert ist,schicke ich eine finale Email als "Vertrag" mit allen Infos und Kosten und AGBs usw und meinen Konto-Daten auf die sie überweisen müssen. Nochmal googlen ob man besser paypal oder konto nimmt. Steuer für mich und auch Schutz für den Käufer

@@ -1,17 +1,27 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-export const Footer = () => {
+interface FooterProps {
+  onNavigate?: (page: 'main' | 'impressum' | 'datenschutz' | 'agb' | 'widerrufsrecht') => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   const currentYear = new Date().getFullYear();
 
+  const handleNavigation = (page: 'main' | 'impressum' | 'datenschutz' | 'agb' | 'widerrufsrecht') => {
+    if (onNavigate) {
+      onNavigate(page);
+    }
+  };
+
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.component}>
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h4>Kontakt</h4>
           <p>
-            <a href="mailto:melissa@zusammenkunst.de" className={styles.emailLink}>
-              melissa@zusammenkunst.de
+            <a href="mailto:info@zusammenkunst.de" className={styles.emailLink}>
+              kontakt@zusammenkunst.de
             </a>
           </p>
           <p>Fragen? Schreib mir gerne eine Email!</p>
@@ -26,10 +36,10 @@ export const Footer = () => {
         <div className={styles.footerSection}>
           <h4>Rechtliches</h4>
           <ul className={styles.footerList}>
-            <li><a href="#" className={styles.footerLink}>Impressum</a></li>
-            <li><a href="#" className={styles.footerLink}>Datenschutz</a></li>
-            <li><a href="#" className={styles.footerLink}>AGB</a></li>
-            <li><a href="#" className={styles.footerLink}>Widerrufsrecht</a></li>
+            <li><button onClick={() => handleNavigation('impressum')} className={styles.footerLink}>Impressum</button></li>
+            <li><button onClick={() => handleNavigation('datenschutz')} className={styles.footerLink}>Datenschutz</button></li>
+            <li><button onClick={() => handleNavigation('agb')} className={styles.footerLink}>AGB</button></li>
+            <li><button onClick={() => handleNavigation('widerrufsrecht')} className={styles.footerLink}>Widerrufsrecht</button></li>
           </ul>
         </div>
 
@@ -38,9 +48,6 @@ export const Footer = () => {
           <div className={styles.socialLinks}>
             <a href="#" className={styles.socialLink} aria-label="Instagram">
               📸 Instagram
-            </a>
-            <a href="#" className={styles.socialLink} aria-label="Facebook">
-              📘 Facebook
             </a>
             <a href="#" className={styles.socialLink} aria-label="TikTok">
               🎵 TikTok

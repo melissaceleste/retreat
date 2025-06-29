@@ -9,7 +9,7 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     question: "Was passiert, wenn es nicht genügend Anmeldungen gibt?",
-    answer: "Sollten sich nicht genügend Teilnehmer:innen anmelden oder zu viele stornieren, versuche ich dich rechtzeitig zu informieren und zu erhältst dein Geld zurück. Leider kann ich dies nur bis zu der Stornierungsfrist der Unterkunft ermöglichen, andernfalls kann nur ein Teil der Kosten erstattet werden."
+    answer: "Sollten sich nicht genügend Teilnehmer:innen anmelden oder zu viele stornieren, versuche ich dich rechtzeitig zu informieren und du erhältst dein Geld zurück. Leider kann ich dies nur bis zu der Stornierungsfrist der Unterkunft ermöglichen, andernfalls kann nur ein Teil der Kosten erstattet werden."
   },
   {
     question: "Was ist im Preis inbegriffen?",

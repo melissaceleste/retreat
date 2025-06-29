@@ -40,7 +40,7 @@ export const DatesAndPrices = () => {
           <p>13. - 18. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
         </div>
-        <div className={styles.price}>1.399 € pro Person</div>  {/*3.655,84 (8) / 6 = 522,2628571429*/}
+        <div className={styles.price}>880 € pro Person</div>  {/*3.655,84 (8) / 6 = 522,2628571429*/}
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
       </div>
 
