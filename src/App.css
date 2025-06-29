@@ -31,10 +31,10 @@
     --montserrat: 'montserrat', sans-serif;
     --teenage-madness: 'teenage-madness', sans-serif;
 
-    /* Color Picker Variablen */
-    --main-color-font: #F597FF;
-    --second-color-font: #00B2A9;
-    --background-color: #FFF6ED;
+    /* Color Picker Variablen - Global verfügbar */
+    --main-color-font: black /*#F597FF*/;
+    --second-color-font: black /*#00B2A9*/;
+    --background-color: #FFF6ED /*#FFF6ED*/;
 }
 
 @font-face {
