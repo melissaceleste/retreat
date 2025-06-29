@@ -45,12 +45,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
         <div className={styles.footerSection}>
           <h4>Social Media</h4>
+          <p>Da ich eigentlich versuche weniger auf Social Media zu sein, streube ich mich grad noch ein wenig dazu <b>zusammenkunst</b> auf Insta und co. zu bringen. Vielleicht verbreitet es ich ja auch ohne :P</p>
           <div className={styles.socialLinks}>
             <a href="#" className={styles.socialLink} aria-label="Instagram">
-              📸 Instagram
+              📸 Instagram (folgt - vielleicht)
             </a>
             <a href="#" className={styles.socialLink} aria-label="TikTok">
-              🎵 TikTok
+              🎵 TikTok (folgt - vielleicht)
             </a>
           </div>
         </div>
@@ -58,7 +59,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
       <div className={styles.footerBottom}>
         <p>&copy; {currentYear} Zusammenkunst. Alle Rechte vorbehalten.</p>
-        <p>Entwickelt mit ❤️ für kreative Seelen</p>
+        <p>Entwickelt von mir ت️</p>
       </div>
     </footer>
   );

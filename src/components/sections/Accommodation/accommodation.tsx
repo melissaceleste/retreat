@@ -5,8 +5,8 @@ export const Accommodation = () => {
   return (
     <div className={styles.accommodation}>
       <h2 className={styles.title}>Unterkunft</h2>
-      <p className={styles.description}>Bei den Unterkünften handelt es sich immer um schöne Villen mit ausreichend Platz für alle, sodass man auch mal
-        Ruhe für sich genießen kann. Vorgesehen sind Doppelzimmer, die man sich immer zu zweit teilt. Natürlich kann man sich aber auch ein Zimmer alleine buchen. Dann wird es im Gesamtpreis natürlich teurer, da die Gruppe dadurch auch kleiner ist.</p>
+      <p className={styles.description}><b>Space to connect – and to disconnect: </b>
+         schöne, ruhige Villen oder Finka mit genug Platz zum allein oder gemeinsam sein. Du teilst dir ein gemütliches Doppelzimmer mit einer anderen Teilnehmer:in – oder gönnst dir ein Einzelzimmer, wenn du lieber für dich bist (beachte: das verändert natürlich die Gruppengröße & den Preis ein wenig).</p>
       <div className={styles.content}>
         <div className={styles.roomCard}>
           <div className={styles.details}>

@@ -43,7 +43,6 @@
   font-weight: 700;
   color: var(--main-color-font);
   margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .description {

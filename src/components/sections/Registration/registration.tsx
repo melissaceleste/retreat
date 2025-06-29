@@ -54,7 +54,7 @@ export const Registration = () => {
     <div className={styles.registration} id="anmeldung">
       <h2 className={styles.title}>Anmeldung</h2>
       <div className={styles.description}>
-        Hört sich gut an? Dann melde dich hier (unverbindlich) einmal bei mir an.
+        Hört sich gut an? Dann melde dich hier (unverbindlich) an.
         . Mir ist es besonders wichtig, dass alle Teilnehmer:innen eine harmonische und spaßige Zeit gemeinsam haben.
         Immerhin ist es Urlaub für uns alle! :-) Daher möchte ich mit jedem/jeder einmal vorab telefonieren/facetimen
         oder ein paar Sprachnachrichten hin und her schicken, um zu schauen ob wir die selben Vorstellungen von dieser

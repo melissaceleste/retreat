@@ -17,7 +17,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "Muss ich Vorkenntnisse haben?",
-    answer: "Nein, alle Bastel-Sessions sind für Anfänger:innen geeignet. Es geht darum gemeinsam was kreativ zu sein und Spaß zu haben."
+    answer: "Nein, alle Bastel-Sessions sind für Anfänger:innen geeignet. Es geht darum gemeinsam kreativ zu sein und Spaß zu haben."
   },
   {
     question: "Was muss ich mitbringen?",
@@ -33,7 +33,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "Wer sind die anderen Teilnehmer:innen?",
-    answer: "Das Retreat richtet sich an alle Menschen, die Lust auf Austausch, neue Freundschaften und kreative Projekte haben. Die Gruppe wird bunt gemischt sein, sodass du viele neue Bekanntschaften schließen kannst. Dabei ist mir wichtig einen harmonischen und safen space zu schaffen, weshalb ich vorab ein kurzes Kennenlerngespräch mit dir führen möchte. Sollte der Wunsch bestehen vorab schon in Kontakt mit den anderen Teilnehmer:innen zu treten, geb mir bescheid. Gern organisiere ich mit allen Interessierten eine Whatsapp/Signal Gruppe."
+    answer: "Dieses Retreat ist für alle, die Lust haben auf Austausch, Kreativität und neue Connections. Die Gruppe wird bewusst bunt & offen gehalten – damit echte Begegnung möglich wird. Mir ist wichtig, einen safen & wertschätzenden Space zu schaffen. Deshalb möchte ich vorab ein kurzes Kennenlerngespräch mit dir führen. Sollte der Wunsch bestehen vorab schon in Kontakt mit den anderen Teilnehmer:innen zu treten, geb mir bescheid. Wenn du willst, connecte ich dich auch schon vorher mit den anderen Teilnehmer:innen über eine Whatsapp/Signal Gruppe."
   }
 ];
 

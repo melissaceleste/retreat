@@ -46,16 +46,11 @@ export const ColorPicker = () => {
   return (
     <div className={styles.overlay}>
       <div className={styles.colorPicker}>
-        <div className={styles.header}>
-          <h3>🎨 Color Picker</h3>
-          <button 
-            className={styles.closeButton}
-            onClick={() => setIsVisible(false)}
-          >
-            ×
-          </button>
+        <div className={styles.header}><h3>🎨</h3>
+          <p>Ich kann mich einfach nicht für eine Farbe entscheiden und lieb es rumzuspielen. Vielleicht hast du ja auch
+            Freude dran. :-)</p>
         </div>
-        
+
         <div className={styles.colorSection}>
           <label>
             <span>Hauptfarbe (Font):</span>
