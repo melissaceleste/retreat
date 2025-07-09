@@ -111,7 +111,6 @@ export const Registration = () => {
             <option value="">Gewünschtes Retreat auswählen</option>
             <option value="Bali Retreat Mai 2024">Bali Retreat Mai 2026</option>
             <option value="Mallorca Retreat Juni 2024">Mallorca Retreat Juni 2026</option>
-            <option value="Portugal Retreat September 2024">Portugal Retreat September 2026</option>
           </select>
         </div>
 

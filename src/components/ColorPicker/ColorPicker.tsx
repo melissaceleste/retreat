@@ -3,8 +3,8 @@ import styles from './ColorPicker.module.css';
 
 export const ColorPicker = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [mainColorFont, setMainColorFont] = useState('#F597FF'); // Default pink
-  const [secondColorFont, setSecondColorFont] = useState('#00B2A9'); // Default green
+  const [mainColorFont, setMainColorFont] = useState('var(--main-color-font)'); // Default pink
+  const [secondColorFont, setSecondColorFont] = useState('var(--second-color-font)'); // Default green
   const [backgroundColor, setBackgroundColor] = useState('#FFF6ED'); // Default beige
 
   // CSS-Variablen aktualisieren

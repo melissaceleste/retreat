@@ -29,7 +29,7 @@ export const DatesAndPrices = () => {
           <p>12. - 17. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
         </div>
-        <div className={styles.price}>835 € pro Person</div> {/* 6+ Nina&Mich -> 265,4166666667 5 + Nina&Mich 318,5 | vllt auch 700, so dass ich meinen Flug drin hab*/}
+        <div className={styles.price}>835 € pro Person (exkl. Flüge)</div> {/* 6+ Nina&Mich -> 265,4166666667 5 + Nina&Mich 318,5 | vllt auch 700, so dass ich meinen Flug drin hab*/}
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
       </div>
 
@@ -40,7 +40,7 @@ export const DatesAndPrices = () => {
           <p>13. - 18. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
         </div>
-        <div className={styles.price}>880 € pro Person</div>  {/*3.655,84 (8) / 6 = 522,2628571429*/}
+        <div className={styles.price}>880 € pro Person (exkl. Flüge)</div>  {/*3.655,84 (8) / 6 = 522,2628571429*/}
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
       </div>
     </div>

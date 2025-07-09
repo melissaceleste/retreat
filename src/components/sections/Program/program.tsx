@@ -42,7 +42,7 @@ export const Program = () => {
           </p>
         </div>
       </Tile>
-      <Tile backgroundColor="var(--second-color-font)" color="var(--color-purple)">
+      <Tile backgroundColor="var(--second-color-font)"  color="var(--background-color)">
           <CreativeSession />
       </Tile>
     </FlexHorizontal>

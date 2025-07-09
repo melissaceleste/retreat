@@ -9,11 +9,13 @@
 }
 
 .navBar {
+  background-color: var(--background-color);
   font-family: unset;
   font-weight: 600;
 }
 
 .headline {
+  background-color: var(--background-color);
   position: fixed;
   top: 40px;
   left: 0;

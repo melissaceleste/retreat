@@ -21,7 +21,7 @@ export const AboutMe = () => {
             <h2 className={styles.title}>Über mich</h2>
             <p className={styles.description}>
               Hallo! Ich bin Melissa und die Gründerin von Zusammenkunst. 
-              Ich bin hauptberuflich Softwareentwicklerin, engagiere mich ehrenamtlich für Feminismus und sammel einfach viel zu viele Hobbys. Ich liebe es allesmögliche auszuprobieren und bin Stammgast in Bastelgeschäften. Ich habe keine Lust allein zu reisen, daher habe ich beschlossen, meine Hobbys mit anderen zu teilen und gemeinsam zu verreisen.
+              Ich bin hauptberuflich Softwareentwicklerin, engagiere mich ehrenamtlich für feministische und sozialpolitische Themen und sammel einfach viiieeel zu viele Hobbys. Ich liebe es allesmögliche auszuprobieren und bin Stammgast in Bastelgeschäften. Ich habe keine Lust allein zu reisen, daher habe ich beschlossen, meine Hobbys mit anderen zu teilen und gemeinsam zu verreisen.
             </p>
             <p className={styles.description}>
               Ich habe lange nach dem passenden Retreat für mich gesucht.. Yoga Retreats.. Surf Retreats.. Healing Retreats..  Aber nichts mit kreativen Bastel-, Mal-, Ton-Sessions.

@@ -33,7 +33,7 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "Wer sind die anderen Teilnehmer:innen?",
-    answer: "Dieses Retreat ist für alle, die Lust haben auf Austausch, Kreativität und neue Connections. Die Gruppe wird bewusst bunt & offen gehalten – damit echte Begegnung möglich wird. Mir ist wichtig, einen safen & wertschätzenden Space zu schaffen. Deshalb möchte ich vorab ein kurzes Kennenlerngespräch mit dir führen. Sollte der Wunsch bestehen vorab schon in Kontakt mit den anderen Teilnehmer:innen zu treten, geb mir bescheid. Wenn du willst, connecte ich dich auch schon vorher mit den anderen Teilnehmer:innen über eine Whatsapp/Signal Gruppe."
+    answer: "Dieses Retreat ist für alle, die Lust haben auf Austausch, Kreativität und neue Connections. Die Gruppe wird bewusst bunt & offen gehalten – damit echte Begegnung möglich wird. Mir ist wichtig, einen safen & wertschätzenden Space zu schaffen. Deshalb möchte ich vorab ein kurzes Kennenlerngespräch mit dir führen. Sollte der Wunsch bestehen vorab schon in Kontakt mit den anderen Teilnehmer:innen zu treten, connecte ich dich gern über eine Whatsapp/Signal Gruppe."
   }
 ];
 
