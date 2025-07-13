@@ -8,7 +8,7 @@ export const About = () => {
   return (
     <div className={styles.about}>
       <FlexHorizontal>
-        <Tile backgroundColor="var(--background-color)" color="var(---main-color-font)" fontSize="22px">
+        <Tile backgroundColor="var(--background-color)" color="var(--main-color-font)" fontSize="22px">
           <FlexHorizontal>
             <Tile backgroundColor="var(--background-color)" color="var(--color-peach)">
               <div className={styles.imageBorder}>

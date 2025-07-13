@@ -11,7 +11,7 @@ export const Header = () => {
         <div className={styles.navBar}><Navbar /></div>
         <div className={styles.headline}>Zusammenkunst</div>
         <div className={styles.wave}>
-          <Wave color="var(--background-color)" />
+          <Wave  />
         </div>
       </div>
     </Tile>
