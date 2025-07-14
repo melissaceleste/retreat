@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 import './App.css';
+import { Analytics } from "@vercel/analytics/react"
 
 import { Program } from './components/sections/Program/program';
 import { About } from './components/sections/About/about';
@@ -41,6 +42,7 @@ export const App = () => {
       default:
         return (
           <div className="content">
+            <Analytics/>
             <Header />
             <Element name="about" className="marginBottom">
               <About />
