@@ -21,7 +21,7 @@ export const DatesAndPrices = () => {
   return (
     <div className={styles.datesAndPrices}>
       <h2 className={styles.title}>Termine & Preise</h2>
-      <div>Das nächste Retreat wird auf Bali oder Mallorca stattfinden. Anmeldezahlen entscheiden. Wenn du an beiden Interesse hast, schreibe das gerne bei deiner Anmeldung in die Anmerkungen mit rein.</div>
+      <div style={{  color:' var(--second-color-font)'}}>Das nächste Retreat wird auf Bali oder Mallorca stattfinden. Anmeldezahlen entscheiden. Wenn du an beiden Interesse hast, schreibe das gerne bei deiner Anmeldung in die Anmerkungen mit rein.</div>
       <div className={styles.dateCard}>
         <ImageSlideshow images={baliImages} />
         <h3 className={styles.dateTitle}>Zusammenkunst goes Bali</h3>
@@ -34,7 +34,7 @@ export const DatesAndPrices = () => {
         {/* 6+ Nina&Mich -> 265,4166666667 5 + Nina&Mich 318,5 | vllt auch 700, so dass ich meinen Flug drin hab*/}
         <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
       </div>
-      <div style={{ fontFamily: 'var(--jungle)' }}>ODER</div>
+      <div style={{ fontFamily: 'var(--jungle)', color:' var(--main-color-font)' }}>ODER</div>
       <div className={styles.dateCard}>
         <ImageSlideshow images={mallorcaImages} />
         <h3 className={styles.dateTitle}>Mallorca</h3>

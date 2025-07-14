@@ -54,9 +54,6 @@ export const Navbar = () => {
       {/* Mobile Side Menu */}
       <div className={`${styles.sideMenu} ${isMenuOpen ? styles.open : ''}`}>
         <div className={styles.sideMenuContent}>
-          <button className={styles.closeButton} onClick={closeMenu}>
-            ×
-          </button>
           <ul className={styles.sideMenuList}>
             <li className={styles.sideMenuItem}>
               <Link to="about" smooth={true} duration={500} offset={-300} onClick={closeMenu}>About</Link>
