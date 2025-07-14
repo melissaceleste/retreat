@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ColorPicker.module.css';
 
+function getCssVar(name: string, fallback: string) {
+  if (typeof window === 'undefined') return fallback;
+  const value = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+  return value || fallback;
+}
+
 export const ColorPicker = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [mainColorFont, setMainColorFont] = useState('var(--main-color-font)'); // Default pink
-  const [secondColorFont, setSecondColorFont] = useState('var(--second-color-font)'); // Default green
-  const [backgroundColor, setBackgroundColor] = useState('#FFF6ED'); // Default beige
+  // Hole die aktuellen CSS-Variablen als Startwert
+  const [mainColorFont, setMainColorFont] = useState(() => getCssVar('--main-color-font', '#F597FF'));
+  const [secondColorFont, setSecondColorFont] = useState(() => getCssVar('--second-color-font', '#00B2A9'));
+  const [backgroundColor, setBackgroundColor] = useState(() => getCssVar('--background-color', '#FFF6ED'));
+  // Merke, ob der User etwas geändert hat
+  const [hasChanged, setHasChanged] = useState(false);
 
-  // CSS-Variablen aktualisieren
+  // CSS-Variablen nur überschreiben, wenn der User etwas geändert hat
   useEffect(() => {
-    document.documentElement.style.setProperty('--main-color-font', mainColorFont);
-    document.documentElement.style.setProperty('--second-color-font', secondColorFont);
-    document.documentElement.style.setProperty('--background-color', backgroundColor);
-  }, [mainColorFont, secondColorFont, backgroundColor]);
+    if (hasChanged) {
+      document.documentElement.style.setProperty('--main-color-font', mainColorFont);
+      document.documentElement.style.setProperty('--second-color-font', secondColorFont);
+      document.documentElement.style.setProperty('--background-color', backgroundColor);
+    }
+  }, [mainColorFont, secondColorFont, backgroundColor, hasChanged]);
 
   const handleColorChange = (colorType: string, value: string) => {
+    setHasChanged(true);
     switch (colorType) {
       case 'main':
         setMainColorFont(value);
@@ -29,9 +41,10 @@ export const ColorPicker = () => {
   };
 
   const resetColors = () => {
-    setMainColorFont('#F597FF');
-    setSecondColorFont('#00B2A9');
-    setBackgroundColor('#FFF6ED');
+    setHasChanged(true);
+    setMainColorFont(getCssVar('--main-color-font', '#F597FF'));
+    setSecondColorFont(getCssVar('--second-color-font', '#00B2A9'));
+    setBackgroundColor(getCssVar('--background-color', '#FFF6ED'));
   };
 
   if (!isVisible) {
