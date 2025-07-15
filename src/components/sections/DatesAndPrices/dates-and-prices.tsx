@@ -28,7 +28,7 @@ export const DatesAndPrices = () => {
         <div className={styles.dateInfo}>
           <p>12. - 17. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
-          <p>7 Plätze (noch verfügbar: 6/7)</p>
+          <p>7 Plätze</p>
         </div>
         <div className={styles.price}>835 € pro Person (exkl. Flüge)</div>
         {/* 6+ Nina&Mich -> 265,4166666667 5 + Nina&Mich 318,5 | vllt auch 700, so dass ich meinen Flug drin hab*/}
@@ -41,7 +41,7 @@ export const DatesAndPrices = () => {
         <div className={styles.dateInfo}>
           <p>13. - 18. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
-          <p>7 Plätze (noch verfügbar: 6/7)</p>
+          <p>7 Plätze</p>
         </div>
         <div className={styles.price}>880 € pro Person (exkl. Flüge)</div>
         {/*3.655,84 (8) / 6 = 522,2628571429*/}
