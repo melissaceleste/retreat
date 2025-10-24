@@ -99,7 +99,28 @@ export const Registration = () => {
           />
         </div>
 
-        <div className={styles.formGroup}>
+        <div className={styles.formGroup} style={{ position: 'relative' }}>
+          {/* Warteliste Banner */}
+          <div style={{
+            position: 'absolute',
+            top: '-10px',
+            right: '10px',
+            background: '#ff416c, -webkit-linear-gradient(to right, #ff416c, #ff4b2b), linear-gradient(to right, #ff416c, #ff4b2b)',
+            color: 'black',
+            padding: '6px 12px',
+            borderRadius: '15px',
+            fontSize: '12px',
+            fontWeight: 'bold',
+            fontFamily: 'var(--jungle)',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            boxShadow: '0 3px 8px rgba(255, 65, 108, 0.3)',
+            zIndex: 10,
+            transform: 'rotate(-3deg)',
+            border: '2px solid black'
+          }}>
+            pack mich auf die Warteliste
+          </div>
           <select
             id="time"
             name="time"
@@ -107,10 +128,16 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
             required
+            disabled
+            style={{ 
+              opacity: '0.6', 
+              filter: 'grayscale(0.3)',
+              cursor: 'not-allowed'
+            }}
           >
             <option value="">Gewünschtes Retreat auswählen</option>
-            <option value="Bali Retreat Mai 2024">Bali Retreat Mai 2026</option>
-            <option value="Mallorca Retreat Juni 2024">Mallorca Retreat Juni 2026</option>
+            <option value="Bali Retreat September 2026">Bali Retreat September 2026 (Folgt bald)</option>
+            <option value="Mallorca Retreat Mai 2026">Mallorca Retreat Mai 2026 (Ausgebucht)</option>
           </select>
         </div>
 

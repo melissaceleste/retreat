@@ -21,21 +21,62 @@ export const DatesAndPrices = () => {
   return (
     <div className={styles.datesAndPrices}>
       <h2 className={styles.title}>Termine & Preise</h2>
-      <div style={{  color:' var(--second-color-font)'}}>Das nächste Retreat wird auf Bali oder Mallorca stattfinden. Anmeldezahlen entscheiden. Wenn du an beiden Interesse hast, schreibe das gerne bei deiner Anmeldung in die Anmerkungen mit rein.</div>
-      <div className={styles.dateCard}>
+   {/*   <div style={{  color:' var(--second-color-font)'}}>Das nächste Retreat wird auf Bali oder Mallorca stattfinden. Anmeldezahlen entscheiden. Wenn du an beiden Interesse hast, schreibe das gerne bei deiner Anmeldung in die Anmerkungen mit rein.</div>*/}
+      <div className={styles.dateCard} style={{ position: 'relative', filter: 'grayscale(0.6)', opacity: '0.7' }}>
+        <div style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px',
+          background: 'linear-gradient(45deg, #4a90e2, #357abd)',
+          color: 'white',
+          padding: '8px 16px',
+          borderRadius: '20px',
+          fontSize: '14px',
+          fontWeight: 'bold',
+          fontFamily: 'var(--jungle)',
+          textTransform: 'uppercase',
+          letterSpacing: '1px',
+          boxShadow: '0 4px 12px rgba(74, 144, 226, 0.3)',
+          zIndex: 10,
+          transform: 'rotate(-5deg)',
+          border: '2px solid white'
+        }}>
+          Folgt bald
+        </div>
         <ImageSlideshow images={baliImages} />
         <h3 className={styles.dateTitle}>Zusammenkunst goes Bali</h3>
         <div className={styles.dateInfo}>
-          <p>12. - 17. Mai 2026</p>
+          <p>12. - 17. September 2026</p>
           <p>6 Tage / 5 Nächte</p>
           <p>7 Plätze</p>
         </div>
         <div className={styles.price}>835 € pro Person (exkl. Flüge)</div>
         {/* 6+ Nina&Mich -> 265,4166666667 5 + Nina&Mich 318,5 | vllt auch 700, so dass ich meinen Flug drin hab*/}
-        <a href="#anmeldung" className={styles.button}>Jetzt anmelden</a>
+        <a href="#anmeldung" className={styles.button} style={{ pointerEvents: 'none', opacity: '0.5' }}>Jetzt anmelden</a>
       </div>
       <div style={{ fontFamily: 'var(--jungle)', color:' var(--main-color-font)' }}>ODER</div>
-      <div className={styles.dateCard}>
+      <div className={styles.dateCard} style={{ position: 'relative' }}>
+
+        <div style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px',
+          background: '#ff416c, -webkit-linear-gradient(to right, #ff416c, #ff4b2b), linear-gradient(to right, #ff416c, #ff4b2b)',
+          color: 'white',
+          padding: '8px 16px',
+          borderRadius: '20px',
+          fontSize: '14px',
+          fontWeight: 'bold',
+          fontFamily: 'var(--jungle)',
+          textTransform: 'uppercase',
+          letterSpacing: '1px',
+          boxShadow: '0 4px 12px rgba(255, 107, 107, 0.3)',
+          zIndex: 10,
+          transform: 'rotate(-5deg)',
+          border: '2px solid #ff416c'
+        }}>
+          Ausgebucht
+        </div>
         <ImageSlideshow images={mallorcaImages} />
         <h3 className={styles.dateTitle}>Mallorca</h3>
         <div className={styles.dateInfo}>
