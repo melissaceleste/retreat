@@ -61,7 +61,7 @@ export const DatesAndPrices = () => {
           position: 'absolute',
           top: '20px',
           right: '20px',
-          background: '#ff416c, -webkit-linear-gradient(to right, #ff416c, #ff4b2b), linear-gradient(to right, #ff416c, #ff4b2b)',
+          background: '#ff416c',
           color: 'white',
           padding: '8px 16px',
           borderRadius: '20px',
