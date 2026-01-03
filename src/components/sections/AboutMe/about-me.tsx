@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './about-me.module.css';
 import { Tile } from '../../ui/Tile/tile';
 
-import meImage from '../../../pictures/me/me1 Kopie.JPEG';
+import meImage from '../../../pictures/me/me-crochet.jpg';
 
 export const AboutMe = () => {
   return (
