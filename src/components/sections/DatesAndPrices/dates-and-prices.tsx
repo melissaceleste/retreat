@@ -57,7 +57,7 @@ export const DatesAndPrices = () => {
       <div style={{ fontFamily: 'var(--jungle)', color:' var(--main-color-font)' }}>ODER</div>
       <div className={styles.dateCard} style={{ position: 'relative' }}>
 
-        <div style={{
+        {/*<div style={{
           position: 'absolute',
           top: '20px',
           right: '20px',
@@ -76,7 +76,7 @@ export const DatesAndPrices = () => {
           border: '2px solid #ff416c'
         }}>
           Ausgebucht
-        </div>
+        </div>*/}
         <ImageSlideshow images={mallorcaImages} />
         <h3 className={styles.dateTitle}>Mallorca</h3>
         <div className={styles.dateInfo}>
