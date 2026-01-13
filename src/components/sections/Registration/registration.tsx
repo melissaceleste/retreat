@@ -100,7 +100,7 @@ export const Registration = () => {
         </div>
 
         <div className={styles.formGroup} style={{ position: 'relative' }}>
-          {/* Warteliste Banner */}
+   {/*        Warteliste Banner
           <div style={{
             position: 'absolute',
             top: '-10px',
@@ -120,7 +120,7 @@ export const Registration = () => {
             border: '2px solid black'
           }}>
             pack mich auf die Warteliste
-          </div>
+          </div>*/}
           <select
             id="time"
             name="time"
@@ -128,16 +128,16 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
             required
-            disabled
-            style={{ 
+            //disabled
+/*            style={{
               opacity: '0.6', 
               filter: 'grayscale(0.3)',
               cursor: 'not-allowed'
-            }}
+            }}*/
           >
             <option value="">Gewünschtes Retreat auswählen</option>
             <option value="Bali Retreat September 2026">Bali Retreat September 2026 (Folgt bald)</option>
-            <option value="Mallorca Retreat Mai 2026">Mallorca Retreat Mai 2026 (Ausgebucht)</option>
+            <option value="Mallorca Retreat Mai 2026">Mallorca Retreat Mai 2026 (2 Plätze frei)</option>
           </select>
         </div>
 
