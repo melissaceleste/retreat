@@ -80,7 +80,7 @@ export const DatesAndPrices = () => {
         <ImageSlideshow images={mallorcaImages} />
         <h3 className={styles.dateTitle}>Mallorca</h3>
         <div className={styles.dateInfo}>
-          <p>13. - 18. Mai 2026</p>
+          <p>18. - 23. Mai 2026</p>
           <p>6 Tage / 5 Nächte</p>
           <p>7 Plätze</p>
         </div>
