@@ -47,8 +47,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <h4>Social Media</h4>
           <p>Da ich eigentlich versuche weniger auf Social Media zu sein, streube ich mich grad noch ein wenig dazu <b>zusammenkunst</b> auf Insta und co. zu bringen. Vielleicht verbreitet es ich ja auch ohne :P</p>
           <div className={styles.socialLinks}>
-            <a href="#" className={styles.socialLink} aria-label="Instagram">
-              📸 Instagram (folgt - vielleicht)
+            <a
+              href="https://www.instagram.com/zusammenkunst_bymel/"
+              className={styles.socialLink}
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              📸 Instagram
             </a>
             <a href="#" className={styles.socialLink} aria-label="TikTok">
               🎵 TikTok (folgt - vielleicht)

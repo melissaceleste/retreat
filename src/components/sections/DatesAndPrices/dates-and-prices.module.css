@@ -1,114 +1,68 @@
 .datesAndPrices {
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem 2rem;
+  max-width: 34rem;
+  margin: 0 auto;
 }
 
 .title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-family: var(--jungle);
   color: var(--main-color-font);
   text-align: center;
 }
 
-.dateCard {
-  background-color: var(--background-color);
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.dateTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
+.infoText {
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
   color: var(--second-color-font);
-  margin-bottom: 1rem;
-}
-
-.dateInfo {
-  color: var(--second-color-font);
-  margin-bottom: 1rem;
-}
-
-.price {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--second-color-font);
-}
-
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--second-color-font);
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-  width: 100%;
   text-align: center;
 }
 
-.button:hover {
-  background-color: var(--second-color-font);
+.infoText p {
+  margin: 0 0 0.65rem;
 }
 
-/* Responsive Design */
+.infoText p:last-child {
+  margin-bottom: 0;
+}
+
+.link {
+  color: var(--main-color-font);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--main-color-font) 35%, transparent);
+}
+
+.link:hover {
+  border-bottom-color: var(--main-color-font);
+}
+
 @media (max-width: 768px) {
   .datesAndPrices {
-    padding: 1.5rem 0.5rem;
+    padding: 1.25rem 0.75rem 1.75rem;
   }
-  
+
   .title {
     font-size: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
-  
-  .dateCard {
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .dateTitle {
-    font-size: 1.3rem;
-  }
-  
-  .price {
-    font-size: 1.1rem;
-  }
-  
-  .button {
-    padding: 0.6rem 1.2rem;
+
+  .infoText {
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 }
 
 @media (max-width: 480px) {
-  .datesAndPrices {
-    padding: 1rem 0.25rem;
-  }
-  
   .title {
     font-size: 1.3rem;
   }
-  
-  .dateCard {
-    padding: 0.75rem;
-  }
-  
-  .dateTitle {
-    font-size: 1.2rem;
-  }
-  
-  .dateInfo {
+
+  .infoText {
     font-size: 0.9rem;
   }
-  
-  .price {
-    font-size: 1rem;
-  }
-  
-  .button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-} 
+}

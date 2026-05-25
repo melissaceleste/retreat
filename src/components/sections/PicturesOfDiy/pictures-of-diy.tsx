@@ -16,6 +16,10 @@ import bastelnScrapbooking3 from '../../../pictures/basteln/basteln-scrapbooking
 import bastelnJournaling from '../../../pictures/basteln/basteln-journaling.JPEG';
 import painting from '../../../pictures/basteln/painting.jpg';
 import pinseldraußen from '../../../pictures/basteln/pinseldraußen.jpg';
+import linol from '../../../pictures/basteln/linol.jpeg';
+import linol2 from '../../../pictures/basteln/linol2.jpeg';
+import beading from '../../../pictures/basteln/beading.jpeg';
+import beading2 from '../../../pictures/basteln/beading2.jpeg';
 
 const images = [
   { src: bastelnJournaling, alt: 'Scrapbooking', size: 'small' },
@@ -31,6 +35,10 @@ const images = [
   { src: bastelnFimo2, alt: ' Fimo', size: 'medium' },
   { src: bastelnScrapbooking, alt: ' Scrapbooking', size: 'large' },
   { src: bastelnScrapbooking3, alt: ' Scrapbooking', size: 'medium' },
+  { src: linol, alt: 'Linoldruck', size: 'medium' },
+  { src: linol2, alt: 'Linoldruck', size: 'small' },
+  { src: beading, alt: 'Beading', size: 'small' },
+  { src: beading2, alt: 'Beading', size: 'medium' },
 ];
 
 export const PicturesOfDiy = () => {

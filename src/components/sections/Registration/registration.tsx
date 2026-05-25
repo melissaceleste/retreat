@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import styles from './registration.module.css';
 import emailjs from 'emailjs-com';
 
+const NEWSLETTER_OPTION = 'Nur Newsletter anmelden';
+
 export const Registration = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [emailWasSent, setEmailWasSent] = useState<null | boolean>(null);
@@ -10,7 +12,7 @@ export const Registration = () => {
     email: '',
     phone: '',
     time: '',
-    message: ''
+    message: '',
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -18,35 +20,45 @@ export const Registration = () => {
     setIsLoading(true);
     setEmailWasSent(null);
 
-    emailjs.send(
-      'service_epsz3rv',      // userId
-      'template_f1xphrl',     // template ID
-      formData,               // Das Objekt mit den Formulardaten
-      'kFNzjMWkTCmvNtbTz'          //public Key
-    )
-    .then(() => {
-        setIsLoading(false);
-        setEmailWasSent(true);
-        setFormData({
-          name: '',
-          email: '',
-          phone: '',
-          time: '',
-          message: ''
-        });
-    }, () => {
-        setIsLoading(false);
-        setEmailWasSent(false);
-    });
+    const payload = {
+      ...formData,
+      time: formData.time || 'Kein Retreat ausgewählt',
+      newsletter_only: formData.time === NEWSLETTER_OPTION ? 'Ja' : 'Nein',
+    };
+
+    emailjs
+      .send(
+        'service_epsz3rv', // userId
+        'template_f1xphrl', // template ID
+        payload,
+        'kFNzjMWkTCmvNtbTz', //public Key
+      )
+      .then(
+        () => {
+          setIsLoading(false);
+          setEmailWasSent(true);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            time: '',
+            message: '',
+          });
+        },
+        () => {
+          setIsLoading(false);
+          setEmailWasSent(false);
+        },
+      );
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
   ) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -54,11 +66,14 @@ export const Registration = () => {
     <div className={styles.registration} id="anmeldung">
       <h2 className={styles.title}>Anmeldung</h2>
       <div className={styles.description}>
-        Hört sich gut an? Dann melde dich hier (unverbindlich) an.
-        . Mir ist es besonders wichtig, dass alle Teilnehmer:innen eine harmonische und spaßige Zeit gemeinsam haben.
-        Immerhin ist es Urlaub für uns alle! :-) Daher möchte ich mit jedem/jeder einmal vorab telefonieren/facetimen
-        oder ein paar Sprachnachrichten hin und her schicken, um zu schauen ob wir die selben Vorstellungen von dieser
-        Reise haben.
+        Hört sich gut an? Dann melde dich hier (unverbindlich) an. Du kannst dich hier auch nur für
+        den Newsletter eintragen — wähle dafür im Formular „Nur Newsletter anmelden“.
+        <br />
+        <br />
+        Für ein Retreat ist es mir besonders wichtig, dass alle Teilnehmer:innen eine harmonische
+        und spaßige Zeit gemeinsam haben. Immerhin ist es Urlaub für uns alle! :-) Daher möchte ich
+        mit jedem/jeder einmal vorab telefonieren/facetimen oder ein paar Sprachnachrichten hin und
+        her schicken, um zu schauen, ob wir die selben Vorstellungen von dieser Reise haben.
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
@@ -99,45 +114,16 @@ export const Registration = () => {
           />
         </div>
 
-        <div className={styles.formGroup} style={{ position: 'relative' }}>
-   {/*        Warteliste Banner
-          <div style={{
-            position: 'absolute',
-            top: '-10px',
-            right: '10px',
-            background: '#ff416c, -webkit-linear-gradient(to right, #ff416c, #ff4b2b), linear-gradient(to right, #ff416c, #ff4b2b)',
-            color: 'black',
-            padding: '6px 12px',
-            borderRadius: '15px',
-            fontSize: '12px',
-            fontWeight: 'bold',
-            fontFamily: 'var(--jungle)',
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
-            boxShadow: '0 3px 8px rgba(255, 65, 108, 0.3)',
-            zIndex: 10,
-            transform: 'rotate(-3deg)',
-            border: '2px solid black'
-          }}>
-            pack mich auf die Warteliste
-          </div>*/}
+        <div className={styles.formGroup}>
           <select
             id="time"
             name="time"
             value={formData.time}
             onChange={handleChange}
             className={styles.input}
-            required
-            //disabled
-/*            style={{
-              opacity: '0.6', 
-              filter: 'grayscale(0.3)',
-              cursor: 'not-allowed'
-            }}*/
           >
-            <option value="">Gewünschtes Retreat auswählen</option>
-            <option value="Bali Retreat September 2026">Bali Retreat September 2026 (Folgt bald)</option>
-            <option value="Mallorca Retreat Mai 2026">Mallorca Retreat Mai 2026 (2 Plätze frei)</option>
+            <option value="">Bitte auswählen (optional)</option>
+            <option value={NEWSLETTER_OPTION}>{NEWSLETTER_OPTION}</option>
           </select>
         </div>
 
@@ -156,14 +142,27 @@ export const Registration = () => {
         <button type="submit" className={styles.button} disabled={isLoading}>
           Let's go!
         </button>
-        {isLoading && <div className={styles.registrationMessage}>E-Mail wird gesendet. Kleinen Moment<span className={styles.dots}>...</span></div>}
-        {emailWasSent === true && <div className={styles.registrationMessage}>Erfolgreich angemeldet!🎉 <br />
-          Wie schön! Ich freu mich. <br /> Du erhälst in Kürze eine Nachricht von mir. (Kann einen Tag dauern)</div>}
+        {isLoading && (
+          <div className={styles.registrationMessage}>
+            E-Mail wird gesendet. Kleinen Moment<span className={styles.dots}>...</span>
+          </div>
+        )}
+        {emailWasSent === true && (
+          <div className={styles.registrationMessage}>
+            Erfolgreich angemeldet!🎉 <br />
+            Wie schön! Ich freu mich. <br /> Du erhälst in Kürze eine Nachricht von mir. (Kann einen
+            Tag dauern)
+          </div>
+        )}
         {emailWasSent === false && (
           <div className={styles.error}>
-            Hmm. Hier ist etwas schief gelaufen. Bitte melde dich direkt per E-Mail an mich: <a href="mailto:celeste.gries@proton.me
-">celeste.gries@proton.me
-          </a>
+            Hmm. Hier ist etwas schief gelaufen. Bitte melde dich direkt per E-Mail an mich:{' '}
+            <a
+              href="mailto:celeste.gries@proton.me
+"
+            >
+              celeste.gries@proton.me
+            </a>
           </div>
         )}
       </form>
