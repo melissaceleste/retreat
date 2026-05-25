@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './pictures-of-diy.module.css';
 
 // Import der Basteln-Bilder
-import bastelnMalen from '../../../pictures/basteln/basteln-malen.JPEG';
+//import bastelnMalen from '../../../pictures/basteln/basteln-malen.JPEG';
 import bastelnMalen2 from '../../../pictures/basteln/basteln-malen2.JPEG';
 import bastelnMalen4 from '../../../pictures/basteln/basteln-malen4.JPEG';
 import bastelnHenna from '../../../pictures/basteln/basteln-henna.JPEG';
@@ -15,7 +15,7 @@ import bastelnScrapbooking from '../../../pictures/basteln/basteln-scrapbooking.
 import bastelnScrapbooking3 from '../../../pictures/basteln/basteln-scrapbooking3.JPEG';
 import bastelnJournaling from '../../../pictures/basteln/basteln-journaling.JPEG';
 import painting from '../../../pictures/basteln/painting.jpg';
-import pinseldraußen from '../../../pictures/basteln/pinseldraußen.jpg';
+//import pinseldraußen from '../../../pictures/basteln/pinseldraußen.jpg';
 import linol from '../../../pictures/basteln/linol.jpeg';
 import linol2 from '../../../pictures/basteln/linol2.jpeg';
 import beading from '../../../pictures/basteln/beading.jpeg';
@@ -29,7 +29,7 @@ const images = [
   { src: painting, alt: 'Malen', size: 'large' },
   { src: bastelnHenna, alt: ' Henna', size: 'small' },
   { src: bastelnSchmuck2, alt: 'Schmuck basteln', size: 'small' },
- // { src: pinseldraußen, alt: 'Malen', size: 'medium' },
+  // { src: pinseldraußen, alt: 'Malen', size: 'medium' },
   { src: bastelnSchmuck3, alt: 'Schmuck basteln', size: 'large' },
   { src: bastelnMalen4, alt: ' Malen', size: 'small' },
   { src: bastelnFimo2, alt: ' Fimo', size: 'medium' },
@@ -47,17 +47,9 @@ export const PicturesOfDiy = () => {
       {/* Masonry Grid */}
       <div className={styles.masonryGrid}>
         {images.map((image, index) => (
-          <div
-            key={index}
-            className={`${styles.masonryItem} ${styles[image.size]}`}
-          >
+          <div key={index} className={`${styles.masonryItem} ${styles[image.size]}`}>
             <div className={styles.imageContainer}>
-              <img
-                src={image.src}
-                alt={image.alt}
-                className={styles.image}
-                loading="lazy"
-              />
+              <img src={image.src} alt={image.alt} className={styles.image} loading="lazy" />
               <div className={styles.overlay}>
                 <div className={styles.overlayContent}>
                   <h3>{image.alt}</h3>
