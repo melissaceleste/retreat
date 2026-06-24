@@ -15,6 +15,7 @@ import { Footer } from './components/layout/Footer/Footer';
 import { DatesAndPrices } from './components/sections/DatesAndPrices/dates-and-prices';
 import { PicturesOfDiy } from './components/sections/PicturesOfDiy/pictures-of-diy';
 import { PicturesOfVibes } from './components/sections/PicturesOfVibes/pictures-of-vibes';
+import { PopUpEvent } from './components/sections/PopUpEvent/pop-up-event';
 import { ColorPicker } from './components/ColorPicker/ColorPicker';
 
 import { Impressum } from './components/pages/Impressum';
@@ -60,6 +61,7 @@ export const App = () => {
             <Element name="datesAndPrices" className="marginBottom">
               <DatesAndPrices />
             </Element>
+            <PopUpEvent />
             <PicturesOfVibes />
             <Element name="registration" className="marginBottom">
               <Registration />

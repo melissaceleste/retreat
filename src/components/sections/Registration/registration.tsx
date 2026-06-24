@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './registration.module.css';
 import emailjs from 'emailjs-com';
 
-const NEWSLETTER_OPTION = 'Nur Newsletter anmelden';
+const NEWSLETTER_OPTION = 'Nur für Newsletter anmelden';
 
 export const Registration = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,9 +20,13 @@ export const Registration = () => {
     setIsLoading(true);
     setEmailWasSent(null);
 
+    const selectedOption = formData.time || 'Keine Auswahl';
+
     const payload = {
       ...formData,
-      time: formData.time || 'Kein Retreat ausgewählt',
+      time: selectedOption,
+      // Wird in EmailJS als {{subject}} im Betreff der Mail verwendet
+      subject: selectedOption,
       newsletter_only: formData.time === NEWSLETTER_OPTION ? 'Ja' : 'Nein',
     };
 
@@ -122,8 +126,11 @@ export const Registration = () => {
             onChange={handleChange}
             className={styles.input}
           >
-            <option value="">Bitte auswählen (optional)</option>
-            <option value={NEWSLETTER_OPTION}>{NEWSLETTER_OPTION}</option>
+            <option value="">Bitte auswählen</option>
+            <option value="Anmeldung Pop-up-Event in Hamburg">
+              Anmeldung Pop-Up-Event in Hamburg
+            </option>
+            <option value="Anmeldung Newsletter">Anmeldung für den Newsletter</option>
           </select>
         </div>
 

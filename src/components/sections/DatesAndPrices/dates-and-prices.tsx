@@ -16,9 +16,9 @@ export const DatesAndPrices = () => {
           </a>{' '}
           vorbei.
         </p>
-        <p>Weitere Events werden gerade geplant :-)</p>
+        <p>Weitere Reisen werden gerade geplant :-)</p>
         <p>
-          Wir tüfteln an einem Pop-Up in Hamburg. Damit du nichts verpasst: folg uns auf{' '}
+          Damit du nichts verpasst: folg uns auf{' '}
           <a href={INSTAGRAM_URL} className={styles.link} target="_blank" rel="noopener noreferrer">
             Instagram
           </a>{' '}
@@ -32,6 +32,7 @@ export const DatesAndPrices = () => {
           </a>{' '}
           ein :)
         </p>
+        <p>Solange komm doch gern zu unserem Pop-Up-Event in Hamburg!</p>
       </div>
     </div>
   );

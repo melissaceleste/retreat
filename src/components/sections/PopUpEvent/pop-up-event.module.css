@@ -1,0 +1,44 @@
+.component {
+  padding: 2rem 1rem 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--jungle);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--second-color-font);
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.imageItem {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .imageGrid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+}
