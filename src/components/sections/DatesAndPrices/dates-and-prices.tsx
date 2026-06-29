@@ -57,129 +57,158 @@ export const DatesAndPrices = () => {
         Workshops inkl. Material sowie Ausflüge in der Umgebung.
       </p>
 
-      <div className={styles.cardGrid}>
-        <div className={styles.dateCard}>
+      <section className={styles.popUpSection}>
+        <div className={`${styles.dateCard} ${styles.popUpCard}`}>
           <div className={`${styles.badge} ${styles.badgePopUp}`}>Pop-Up</div>
           <ImageSlideshow images={popUpImages} {...slideshowProps} />
           <h3 className={styles.dateTitle}>Pop-Up-Event Hamburg</h3>
           <div className={styles.dateInfo}>
-            <p>Termin folgt in Kürze</p>
+            <p>26.Juli 2026</p>
             <p>1 Tag · kreativ zusammen sein</p>
           </div>
-          <div className={styles.price}>Preis folgt in Kürze</div>
+          <div className={styles.price}>46-48 Euro</div>
           <a href="#anmeldung" className={styles.button}>
             Jetzt anmelden
           </a>
         </div>
+      </section>
 
-        <div className={styles.dateCard}>
-          <div className={`${styles.badge} ${styles.badgePlanned}`}>Herbst 2027</div>
-          <ImageSlideshow images={denmarkImages} {...slideshowProps} />
-          <h3 className={styles.dateTitle}>Dänemark</h3>
-          <div className={styles.dateInfo}>
-            <p>02.–08. Oktober 2027</p>
-            <p className={styles.dateHint}>Termin kann sich um 1–2 Wochen verschieben</p>
-            <p>6 Tage / 5 Nächte · 7–8 Plätze</p>
-            <p>Abholung: Rødby, Gedser, Nykøbing Falster</p>
+      <section className={`${styles.retreatSection} ${styles.summerSection}`}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionEmoji} aria-hidden="true">
+            ☀️
+          </span>
+          <div className={styles.sectionHeaderText}>
+            <h3 className={styles.sectionTitle}>Sommer-Retreat 2027</h3>
+            <p className={styles.sectionSubtitle}>
+              <strong>Ihr entscheidet mit:</strong> Welches von drei Zielen wünscht ihr euch? Melde
+              deine Präferenz an — die Anmeldungen bestimmen, wohin es geht.
+            </p>
           </div>
-          <div className={styles.price}>
-            <p>ca. 880 € Einzelzimmer</p>
-            <p>ca. 520 € pro Person im Doppelzimmer</p>
-          </div>
-
-          <a
-            href={DENMARK_AIRBNB}
-            className={styles.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Unterkunft ansehen
-          </a>
-          <a href="#anmeldung" className={styles.button}>
-            Interesse melden
-          </a>
         </div>
 
-        <div className={styles.dateCard}>
-          <div className={`${styles.badge} ${styles.badgeChoice}`}>Mai 2027</div>
-          <ImageSlideshow images={franceImages} {...slideshowProps} />
-          <h3 className={styles.dateTitle}>Südfrankreich · Saint-Paul-de-Vence</h3>
-          <div className={styles.dateInfo}>
-            <p>02.–07. Mai 2027</p>
-            <p className={styles.dateHint}>Termin kann sich leicht verschieben</p>
-            <p>5 Tage / 4 Nächte</p>
-            <p>Abholung: Nizza, Antibes, Cannes</p>
-          </div>
-          <div className={styles.price}>ca. 880 € pro Person</div>
-          <p className={styles.dateNote}>
-            Eines von drei Sommer-Retreats zur Auswahl — deine Stimme zählt!
-          </p>
-          <a
-            href={FRANCE_AIRBNB}
-            className={styles.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Unterkunft ansehen
-          </a>
-          <a href="#anmeldung" className={styles.button}>
-            Interesse melden
-          </a>
-        </div>
-
-        <div className={styles.dateCard}>
-          <div className={`${styles.badge} ${styles.badgeChoice}`}>Mai/Juni 2027</div>
-          <ImageSlideshow images={italyImages} {...slideshowProps} />
-          <h3 className={styles.dateTitle}>Norditalien · Piemont</h3>
-          <div className={styles.dateInfo}>
-            <p>30. Mai – 04. Juni 2027</p>
-            <p className={styles.dateHint}>Termin kann sich leicht verschieben</p>
-            <p>5 Tage / 4 Nächte</p>
-            <p>Abholung: Genua, Turin, Asti</p>
-          </div>
-          <div className={styles.price}>ca. 850 € pro Person</div>
-          <p className={styles.dateNote}>
-            Eines von drei Sommer-Retreats zur Auswahl — deine Stimme zählt!
-          </p>
-          <a
-            href={ITALY_AIRBNB}
-            className={styles.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Unterkunft ansehen
-          </a>
-          <a href="#anmeldung" className={styles.button}>
-            Interesse melden
-          </a>
-        </div>
-
-        <div className={styles.dateCard}>
-          <div className={`${styles.badge} ${styles.badgeMallorca}`}>Mallorca</div>
-          <ImageSlideshow images={mallorcaImages} {...slideshowProps} />
-          <h3 className={styles.dateTitle}>Nochmal Mallorca?</h3>
-          <div className={styles.dateInfo}>
-            <p>Unsere beliebte Unterkunft von letztem Jahr</p>
-            <p>Termin nach Abstimmung</p>
-          </div>
-          <div className={styles.price}>ca. 850 € pro Person</div>
-          <p className={styles.dateNote}>
-            Zurück in die wunderschöne Unterkunft — Eindrücke gibt&apos;s auf{' '}
+        <div className={styles.choiceGrid}>
+          <div className={`${styles.dateCard} ${styles.choiceCard}`}>
+            <span className={styles.choiceLabel}>Option 1 · 🇫🇷</span>
+            <ImageSlideshow images={franceImages} {...slideshowProps} />
+            <h3 className={styles.dateTitle}>Südfrankreich</h3>
+            <p className={styles.choiceDestination}>Saint-Paul-de-Vence</p>
+            <div className={styles.dateInfo}>
+              <p>02.–07. Mai 2027</p>
+              <p className={styles.dateHint}>Termin kann sich leicht verschieben</p>
+              <p>5 Tage / 4 Nächte</p>
+              <p>Abholung: Nizza, Antibes, Cannes</p>
+            </div>
+            <div className={styles.price}>ca. 880 € pro Person</div>
             <a
-              href={INSTAGRAM_URL}
-              className={styles.inlineLink}
+              href={FRANCE_AIRBNB}
+              className={styles.externalLink}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              Unterkunft ansehen
             </a>
-            .
-          </p>
-          <a href="#anmeldung" className={styles.button}>
-            Interesse melden
-          </a>
+            <a href="#anmeldung" className={styles.button}>
+              Stimme für Frankreich
+            </a>
+          </div>
+
+          <div className={`${styles.dateCard} ${styles.choiceCard}`}>
+            <span className={styles.choiceLabel}>Option 2 · 🇮🇹</span>
+            <ImageSlideshow images={italyImages} {...slideshowProps} />
+            <h3 className={styles.dateTitle}>Norditalien</h3>
+            <p className={styles.choiceDestination}>Piemont</p>
+            <div className={styles.dateInfo}>
+              <p>30. Mai – 04. Juni 2027</p>
+              <p className={styles.dateHint}>Termin kann sich leicht verschieben</p>
+              <p>5 Tage / 4 Nächte</p>
+              <p>Abholung: Genua, Turin, Asti</p>
+            </div>
+            <div className={styles.price}>ca. 850 € pro Person</div>
+            <a
+              href={ITALY_AIRBNB}
+              className={styles.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unterkunft ansehen
+            </a>
+            <a href="#anmeldung" className={styles.button}>
+              Stimme für Italien
+            </a>
+          </div>
+
+          <div className={`${styles.dateCard} ${styles.choiceCard}`}>
+            <span className={styles.choiceLabel}>Option 3 · 🏝️</span>
+            <ImageSlideshow images={mallorcaImages} {...slideshowProps} />
+            <h3 className={styles.dateTitle}>Mallorca</h3>
+            <p className={styles.choiceDestination}>Nochmal zurück?</p>
+            <div className={styles.dateInfo}>
+              <p>Beliebte Unterkunft von letztem Jahr</p>
+              <p>Termin nach Abstimmung</p>
+            </div>
+            <div className={styles.price}>ca. 850 € pro Person</div>
+            <p className={styles.dateNote}>
+              Eindrücke auf{' '}
+              <a
+                href={INSTAGRAM_URL}
+                className={styles.inlineLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </p>
+            <a href="#anmeldung" className={styles.button}>
+              Stimme für Mallorca
+            </a>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section className={`${styles.retreatSection} ${styles.autumnSection}`}>
+        <div className={styles.sectionHeader}>
+          <span className={styles.sectionEmoji} aria-hidden="true">
+            🍂
+          </span>
+          <div className={styles.sectionHeaderText}>
+            <h3 className={styles.sectionTitle}>Herbst-Retreat 2027</h3>
+          </div>
+        </div>
+
+        <div className={styles.singleCardWrap}>
+          <div className={`${styles.dateCard} ${styles.autumnCard}`}>
+            <div className={`${styles.badge} ${styles.badgeAutumn}`}>Oktober 2027</div>
+            <ImageSlideshow images={denmarkImages} {...slideshowProps} />
+            <h3 className={styles.dateTitle}>Dänemark</h3>
+            <div className={styles.dateInfo}>
+              <p>02.–08. Oktober 2027</p>
+              <p className={styles.dateHint}>Termin kann sich um 1–2 Wochen verschieben</p>
+              <p>6 Tage / 5 Nächte · 7–8 Plätze</p>
+              <p>Abholung: Rødby, Gedser, Nykøbing Falster</p>
+            </div>
+            <div className={styles.price}>
+              <p>ca. 880 € Einzelzimmer</p>
+              <p>ca. 520 € pro Person im Doppelzimmer</p>
+            </div>
+            <p className={styles.dateNote}>
+              Für die Unterkunftsbuchung brauche ich möglichst zeitnah verbindliche
+              Interessenbekundungen.
+            </p>
+            <a
+              href={DENMARK_AIRBNB}
+              className={styles.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Unterkunft ansehen
+            </a>
+            <a href="#anmeldung" className={styles.button}>
+              Interesse melden
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

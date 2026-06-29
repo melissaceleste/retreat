@@ -20,14 +20,83 @@
   color: var(--second-color-font);
   text-align: center;
   max-width: 52rem;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 2rem;
 }
 
-.cardGrid {
+.popUpSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.popUpCard {
+  width: 100%;
+  max-width: 320px;
+}
+
+.retreatSection {
+  border-radius: 16px;
+  padding: 1.25rem 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.autumnSection {
+  border: 2px solid color-mix(in srgb, var(--second-color-font) 45%, transparent);
+}
+
+.summerSection {
+  border: 2px solid color-mix(in srgb, var(--main-color-font) 40%, transparent);
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.sectionEmoji {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sectionHeaderText {
+  flex: 1;
+}
+
+.sectionTitle {
+  font-family: var(--jungle);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--main-color-font);
+  margin: 0 0 0.35rem;
+  line-height: 1.2;
+}
+
+.sectionSubtitle {
+  font-family: var(--montserrat);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--second-color-font);
+  margin: 0;
+}
+
+.sectionSubtitle strong {
+  color: var(--color-entspannt-schwarz);
+}
+
+.singleCardWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.choiceGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .dateCard {
@@ -39,6 +108,39 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+.autumnCard {
+  width: 100%;
+  max-width: 360px;
+  border: 1px solid color-mix(in srgb, var(--second-color-font) 30%, transparent);
+}
+
+.choiceCard {
+  border: 1px dashed color-mix(in srgb, var(--main-color-font) 30%, transparent);
+}
+
+.choiceLabel {
+  display: inline-block;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  font-family: var(--montserrat);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-color-font);
+  border: 1px solid color-mix(in srgb, var(--main-color-font) 35%, transparent);
+  border-radius: 999px;
+}
+
+.choiceDestination {
+  font-family: var(--montserrat);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--second-color-font);
+  margin: -0.35rem 0 0.65rem;
 }
 
 .dateTitle {
@@ -143,27 +245,20 @@
   box-shadow: 0 4px 12px rgba(255, 98, 48, 0.3);
 }
 
-.badgePlanned {
-  background: linear-gradient(45deg, #4a90e2, #357abd);
-  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
-}
-
-.badgeChoice {
-  background: linear-gradient(45deg, #6800f3, #ab69e9);
-  box-shadow: 0 4px 12px rgba(104, 0, 243, 0.3);
-}
-
-.badgeMallorca {
-  background: linear-gradient(45deg, #00b2a9, #5ce0d8);
-  box-shadow: 0 4px 12px rgba(0, 178, 169, 0.3);
+.badgeAutumn {
+  background: linear-gradient(45deg, #e94f37, #ff6230);
+  box-shadow: 0 4px 12px rgba(233, 79, 55, 0.35);
 }
 
 @media (max-width: 900px) {
-  .cardGrid {
+  .choiceGrid {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
     max-width: 420px;
     margin: 0 auto;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
   }
 
   .dateCard {
@@ -194,6 +289,14 @@
 
   .title {
     font-size: 1.3rem;
+  }
+
+  .retreatSection {
+    padding: 1rem 0.85rem 1.25rem;
+  }
+
+  .sectionEmoji {
+    font-size: 1.6rem;
   }
 
   .dateCard {
