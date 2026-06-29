@@ -3,9 +3,15 @@ import styles from './ImageSlideshow.module.css';
 
 interface ImageSlideshowProps {
   images: string[];
+  square?: boolean;
+  imageFit?: 'cover' | 'contain';
 }
 
-export const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
+export const ImageSlideshow: React.FC<ImageSlideshowProps> = ({
+  images,
+  square = false,
+  imageFit = 'cover',
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = (e: React.MouseEvent) => {
@@ -30,8 +36,15 @@ export const ImageSlideshow: React.FC<ImageSlideshowProps> = ({ images }) => {
 
   return (
     <div className={styles.slideshowWrapper}>
-      <div className={styles.slideshowContainer}>
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} className={styles.image} />
+      <div
+        className={`${styles.slideshowContainer} ${square ? styles.slideshowSquare : ''}`}
+      >
+        <img
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+          className={`${styles.image} ${square ? styles.imageSquare : ''}`}
+          style={{ objectFit: imageFit }}
+        />
         <button onClick={goToPrevious} className={styles.arrowLeft}>❮</button>
         <button onClick={goToNext} className={styles.arrowRight}>❯</button>
       </div>

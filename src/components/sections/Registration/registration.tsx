@@ -71,13 +71,13 @@ export const Registration = () => {
       <h2 className={styles.title}>Anmeldung</h2>
       <div className={styles.description}>
         Hört sich gut an? Dann melde dich hier (unverbindlich) an. Du kannst dich hier auch nur für
-        den Newsletter eintragen — wähle dafür im Formular „Nur Newsletter anmelden“.
+        den Newsletter eintragen — wähle dafür im Formular „Nur für Newsletter anmelden“.
         <br />
         <br />
         Für ein Retreat ist es mir besonders wichtig, dass alle Teilnehmer:innen eine harmonische
-        und spaßige Zeit gemeinsam haben. Immerhin ist es Urlaub für uns alle! :-) Daher möchte ich
-        mit jedem/jeder einmal vorab telefonieren/facetimen oder ein paar Sprachnachrichten hin und
-        her schicken, um zu schauen, ob wir die selben Vorstellungen von dieser Reise haben.
+        und spaßige Zeit gemeinsam haben. Nach deiner Anmeldung folgt ein kurzes Telefonat oder
+        Zoom-Meeting, damit wir schauen können, ob wir dieselben Vorstellungen von der Reise haben
+        und die Gruppe gut zusammenpasst.
       </div>
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.formGroup}>
@@ -127,10 +127,18 @@ export const Registration = () => {
             className={styles.input}
           >
             <option value="">Bitte auswählen</option>
-            <option value="Anmeldung Pop-up-Event in Hamburg">
-              Anmeldung Pop-Up-Event in Hamburg
+            <option value="Pop-Up-Event Hamburg">Pop-Up-Event Hamburg</option>
+            <option value="Retreat Dänemark · 02.–08. Oktober 2027">
+              Retreat Dänemark · 02.–08. Oktober 2027
             </option>
-            <option value="Anmeldung Newsletter">Anmeldung für den Newsletter</option>
+            <option value="Retreat Südfrankreich · Saint-Paul-de-Vence · 02.–07. Mai 2027">
+              Retreat Südfrankreich · Saint-Paul-de-Vence · 02.–07. Mai 2027
+            </option>
+            <option value="Retreat Norditalien · Piemont · 30.05.–04.06.2027">
+              Retreat Norditalien · Piemont · 30.05.–04.06.2027
+            </option>
+            <option value="Retreat Mallorca">Retreat Mallorca</option>
+            <option value={NEWSLETTER_OPTION}>{NEWSLETTER_OPTION}</option>
           </select>
         </div>
 
