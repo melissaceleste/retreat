@@ -49,7 +49,7 @@ export const DatesAndPrices = () => {
           </div>
           <div className={styles.price}>46-48 Euro</div>
           <a href="#anmeldung" className={styles.button}>
-            Jetzt anmelden
+            anmelden
           </a>
         </div>
       </section>
@@ -84,7 +84,7 @@ export const DatesAndPrices = () => {
                 Unterkunft ansehen
               </a>
               <a href="#anmeldung" className={styles.button}>
-                Interesse melden
+                Will mit!
               </a>
             </div>
           </div>
@@ -119,7 +119,7 @@ export const DatesAndPrices = () => {
                 Unterkunft ansehen
               </a>
               <a href="#anmeldung" className={styles.button}>
-                Interesse melden
+                Will mit!
               </a>
             </div>
           </div>
