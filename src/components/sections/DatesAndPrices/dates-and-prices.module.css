@@ -41,7 +41,7 @@
 }
 
 .autumnSection {
-  border: 2px solid color-mix(in srgb, var(--second-color-font) 45%, transparent);
+  border: 2px solid color-mix(in srgb, var(--main-color-font) 45%, transparent);
 }
 
 .summerSection {
@@ -52,7 +52,6 @@
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  margin-bottom: 1.25rem;
   text-align: left;
 }
 
@@ -87,9 +86,28 @@
   color: var(--color-entspannt-schwarz);
 }
 
-.singleCardWrap {
+.retreatsWrapper {
+  margin-bottom: 1.75rem;
+}
+
+.retreatsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.retreatsGrid .retreatSection {
+  margin-bottom: 0;
+  height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.retreatsGrid .autumnCard {
+  max-width: none;
+  width: 100%;
+  flex: 1;
 }
 
 .choiceGrid {
@@ -101,10 +119,8 @@
 
 .dateCard {
   position: relative;
-  background-color: var(--background-color);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -113,7 +129,6 @@
 .autumnCard {
   width: 100%;
   max-width: 360px;
-  border: 1px solid color-mix(in srgb, var(--second-color-font) 30%, transparent);
 }
 
 .choiceCard {
@@ -139,7 +154,7 @@
   font-family: var(--montserrat);
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--second-color-font);
+  color: var(--main-color-font);
   margin: -0.35rem 0 0.65rem;
 }
 
@@ -251,6 +266,10 @@
 }
 
 @media (max-width: 900px) {
+  .retreatsGrid {
+    grid-template-columns: 1fr;
+  }
+
   .choiceGrid {
     grid-template-columns: 1fr;
     max-width: 420px;

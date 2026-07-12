@@ -131,13 +131,9 @@ export const Registration = () => {
             <option value="Retreat Dänemark · 02.–08. Oktober 2027">
               Retreat Dänemark · 02.–08. Oktober 2027
             </option>
-            <option value="Retreat Südfrankreich · Saint-Paul-de-Vence · 02.–07. Mai 2027">
-              Retreat Südfrankreich · Saint-Paul-de-Vence · 02.–07. Mai 2027
+            <option value="Retreat Südfrankreich · Saint-Paul-de-Vence · 17.–21. Mai 2027">
+              Retreat Südfrankreich · Saint-Paul-de-Vence · 17.–21. Mai 2027
             </option>
-            <option value="Retreat Norditalien · Piemont · 30.05.–04.06.2027">
-              Retreat Norditalien · Piemont · 30.05.–04.06.2027
-            </option>
-            <option value="Retreat Mallorca">Retreat Mallorca</option>
             <option value={NEWSLETTER_OPTION}>{NEWSLETTER_OPTION}</option>
           </select>
         </div>

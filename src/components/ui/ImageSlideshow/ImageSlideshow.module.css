@@ -1,7 +1,6 @@
 .slideshowWrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .slideshowContainer {
@@ -21,7 +20,6 @@
 .slideshowSquare {
   aspect-ratio: 1;
   height: auto;
-  background-color: color-mix(in srgb, var(--background-color) 70%, white);
 }
 
 .imageSquare {
@@ -30,7 +28,8 @@
   object-fit: contain;
 }
 
-.arrowLeft, .arrowRight {
+.arrowLeft,
+.arrowRight {
   color: white;
   position: absolute;
   top: 50%;
@@ -44,7 +43,8 @@
   padding: 0 10px;
 }
 
-.arrowLeft:hover, .arrowRight:hover {
+.arrowLeft:hover,
+.arrowRight:hover {
   color: var(--main-color-font);
   background: transparent;
   border: none;
