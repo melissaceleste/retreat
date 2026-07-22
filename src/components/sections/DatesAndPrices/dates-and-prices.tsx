@@ -2,11 +2,6 @@ import React from 'react';
 import styles from './dates-and-prices.module.css';
 import { ImageSlideshow } from '../../ui/ImageSlideshow/ImageSlideshow';
 
-import popup1 from '../../../pictures/popup/popup1.jpeg';
-import popup2 from '../../../pictures/popup/popup2.jpeg';
-import popup3 from '../../../pictures/popup/popup3.jpeg';
-import popup4 from '../../../pictures/popup/popup4.jpeg';
-
 import denmark0 from '../../../pictures/dänemark0.png';
 import denmark1 from '../../../pictures/dänemark1.png';
 import denmark2 from '../../../pictures/dänemark2.png';
@@ -16,7 +11,6 @@ import frankreich1 from '../../../pictures/frankreich1.png';
 import frankreich2 from '../../../pictures/frankreich2.png';
 import frankreich4 from '../../../pictures/frankreich4.png';
 
-const popUpImages = [popup1, popup2, popup3, popup4];
 const denmarkImages = [denmark0, denmark1, denmark2, denmark3];
 const franceImages = [frankreich1, frankreich2, frankreich4];
 
@@ -37,22 +31,6 @@ export const DatesAndPrices = () => {
         variieren. Enthalten sind Transfer vom Abholort, Unterkunft, Vollverpflegung, kreative
         Workshops inkl. Material sowie Ausflüge in der Umgebung.
       </p>
-
-      <section className={styles.popUpSection}>
-        <div className={`${styles.dateCard} ${styles.popUpCard}`}>
-          <div className={`${styles.badge} ${styles.badgePopUp}`}>Pop-Up</div>
-          <ImageSlideshow images={popUpImages} {...slideshowProps} />
-          <h3 className={styles.dateTitle}>Pop-Up-Event Hamburg</h3>
-          <div className={styles.dateInfo}>
-            <p>26.Juli 2026</p>
-            <p>1 Tag · kreativ zusammen sein</p>
-          </div>
-          <div className={styles.price}>46-48 Euro</div>
-          <a href="#anmeldung" className={styles.button}>
-            anmelden
-          </a>
-        </div>
-      </section>
 
       <section className={styles.retreatsWrapper}>
         <div className={styles.retreatsGrid}>

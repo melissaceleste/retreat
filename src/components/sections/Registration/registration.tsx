@@ -127,7 +127,6 @@ export const Registration = () => {
             className={styles.input}
           >
             <option value="">Bitte auswählen</option>
-            <option value="Pop-Up-Event Hamburg">Pop-Up-Event Hamburg</option>
             <option value="Retreat Dänemark · 02.–08. Oktober 2027">
               Retreat Dänemark · 02.–08. Oktober 2027
             </option>
